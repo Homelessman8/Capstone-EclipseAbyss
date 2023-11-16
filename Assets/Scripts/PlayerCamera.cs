@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +11,8 @@ public class PlayerCamera : MonoBehaviour
 	private void Start()
 	{
 		ParentObject = transform.parent.transform;
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 
 	public void CameraMoved(InputAction.CallbackContext context)
@@ -29,7 +28,7 @@ public class PlayerCamera : MonoBehaviour
 
 			ParentObject.Rotate(RotationSpeed * Time.deltaTime * MoveDelta.x * Vector3.up);
 
-			
+
 		}
 	}
 }
