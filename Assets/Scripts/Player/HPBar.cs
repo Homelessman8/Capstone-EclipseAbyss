@@ -5,14 +5,14 @@ public class HPBar : MonoBehaviour
 {
 	// This script is to be placed on the same object as the UnitScript, otherwise it won't work
 	[SerializeField] private Slider Bar;
-	[SerializeField] private float Roughness = 5;
+	[SerializeField] private float ScrollSpeed = 5;
 	private UnitScript UnitToRead;
 	private void Awake()
 	{
 		// Prevent a crash that shouldn't ever occur anyway
-		if (Roughness <= 0)
+		if (ScrollSpeed <= 0)
 		{
-			Roughness = 1;
+			ScrollSpeed = 1;
 		}
 
 		// Search for the HP Bar asset
@@ -30,11 +30,11 @@ public class HPBar : MonoBehaviour
 		Bar.maxValue = UnitToRead.MaxHP;
 		// This next part is overcomplicated, but the smoothing looks pretty...
 		if (Bar.value < UnitToRead.HP)
-		{
-			Bar.value = Mathf.Clamp(Bar.value - Roughness * Time.deltaTime, UnitToRead.HP, Bar.maxValue);
+		{ // I've been healed
+			Bar.value = Mathf.Clamp(Bar.value + ScrollSpeed * Time.deltaTime, UnitToRead.HP, Bar.maxValue);
 		} else
-		{
-			Bar.value = Mathf.Clamp(Bar.value + Roughness * Time.deltaTime, UnitToRead.HP, Bar.maxValue);
+		{ // I've been hurt
+			Bar.value = Mathf.Clamp(Bar.value - ScrollSpeed * Time.deltaTime, UnitToRead.HP, Bar.maxValue);
 		}
 		
 	}
