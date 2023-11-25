@@ -34,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 402384454216621166}
@@ -121,7 +121,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201064683597120016}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0.01
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -221,6 +221,26 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7f48d1e5-0d9e-47fd-b798-ba9dda0776c2
     m_ActionName: Ingame/Inventory[/Keyboard/i,/Keyboard/b,/XInputControllerWindows/buttonNorth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6058381936837305678}
+        m_TargetAssemblyTypeName: InteractWithStuff, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2750d088-601b-4ad2-8e73-1c583b3f292f
+    m_ActionName: Ingame/Interact[/XInputControllerWindows/buttonWest,/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8e00a74c-bcfd-47f8-ab39-bbed47523103
+    m_ActionName: Ingame/Shoot[/XInputControllerWindows/leftTrigger,/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Ingame
@@ -256,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bar: {fileID: 0}
-  Roughness: 10
+  ScrollSpeed: 5
 --- !u!114 &901102070364518775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,8 +289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743120791f2cfab4c82ef6a2db56ff4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Conditions: []
   MaxHP: 100
-  HP: 100
+  HP: 20
 --- !u!1 &6330062434949238533
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +304,7 @@ GameObject:
   - component: {fileID: 7548424781668653026}
   - component: {fileID: 6113020153064223336}
   - component: {fileID: 806751893366836369}
+  - component: {fileID: 6058381936837305678}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -378,3 +400,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanCamera: 1
   RotationSpeed: 20
+--- !u!114 &6058381936837305678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6330062434949238533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03921b8a95207ed46b39715bf14e374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxInteractDistance: 0
