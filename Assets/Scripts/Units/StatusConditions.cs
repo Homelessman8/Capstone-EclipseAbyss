@@ -12,6 +12,7 @@ public class StatusConditions : MonoBehaviour
         public float TimeUntilGone = -1;
         public virtual bool Process(UnitScript unit)
         {
+            // Triggers every frame
             if (UsesTimer)
             {
                 TimeUntilGone -= Time.deltaTime;
@@ -25,7 +26,7 @@ public class StatusConditions : MonoBehaviour
         }
         public virtual void OnTimeout()
         {
-			// Really great function, right here. so amazing
+			// Happens when the timer expires if the timer is included.
 		}
 	}
 }

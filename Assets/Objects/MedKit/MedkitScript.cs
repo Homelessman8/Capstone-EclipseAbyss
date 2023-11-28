@@ -12,6 +12,7 @@ public class MedkitScript : MonoBehaviour
 
 		public Medicine(int Healamount, float Healspeed)
 		{
+			// Triggers when applied
 			HealingLeft = Healamount;
 			HealingSpeed = Healspeed;
 			HealCooldown = 0f;
@@ -19,6 +20,7 @@ public class MedkitScript : MonoBehaviour
 
 		public override bool Process(UnitScript unit)
 		{
+			// Triggers every frame
 			HealCooldown += Time.deltaTime * HealingSpeed * Mathf.Clamp(HealingLeft / 4, 1, 100);
 			if (HealCooldown > 1f && HealingLeft > 0)
 			{
