@@ -19,11 +19,11 @@ public class UnitScript : MonoBehaviour
 				ExpiredConditions.Add(Conditions.IndexOf(item));
 			}
 		}
-		Conditions.Reverse();
+		ExpiredConditions.Reverse();
 		foreach (var item in ExpiredConditions)
 		{
 			Conditions.RemoveAt(item);
 		}
-		Conditions.Clear();
+        ExpiredConditions.Clear();
 	}
 }
