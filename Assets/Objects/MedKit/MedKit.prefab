@@ -148,5 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayImage: {fileID: 21300000, guid: 53695d9a487f05442bb28d83397256da, type: 3}
   conditionColor: {r: 0, g: 1, b: 0, a: 1}
+  InventoryObject: {fileID: 6324278805279410346, guid: 238845a4e43d772458b1ebeb5caa2af5, type: 3}
   HealAmount: 80
   HealSpeed: 1

@@ -218,7 +218,19 @@ MonoBehaviour:
     m_ActionId: 2f41b524-d33c-47d2-b3c4-ffbf4488586b
     m_ActionName: Ingame/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InventoryScript, Assembly-CSharp
+        m_MethodName: OpenInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 7f48d1e5-0d9e-47fd-b798-ba9dda0776c2
     m_ActionName: Ingame/Inventory[/Keyboard/i,/Keyboard/b,/XInputControllerWindows/buttonNorth]
   - m_PersistentCalls:
@@ -241,6 +253,38 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8e00a74c-bcfd-47f8-ab39-bbed47523103
     m_ActionName: Ingame/Shoot[/XInputControllerWindows/leftTrigger,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6058381936837305678}
+        m_TargetAssemblyTypeName: InteractWithStuff, Assembly-CSharp
+        m_MethodName: PickUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8cc704c9-8e96-4243-9f63-02e4b9d13261
+    m_ActionName: Ingame/PickUp[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 93fe871a-cec5-4cdc-be82-f541f089a29f
+    m_ActionName: UI/Confirm[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d96e3c46-9c67-4079-93ba-877c4a291c61
+    m_ActionName: UI/Cancel[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6a635f01-3732-49c8-99ab-d6d303c68c90
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 286f7456-b16b-45a8-9248-bde84d4993ba
+    m_ActionName: UI/CloseUI[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Ingame
@@ -398,7 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanCamera: 1
-  RotationSpeed: 20
+  RotationSpeed: 10
 --- !u!114 &6058381936837305678
 MonoBehaviour:
   m_ObjectHideFlags: 0
