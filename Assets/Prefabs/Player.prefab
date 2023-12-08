@@ -289,7 +289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743120791f2cfab4c82ef6a2db56ff4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conditions: []
   MaxHP: 100
   HP: 20
 --- !u!1 &6330062434949238533
@@ -412,4 +411,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03921b8a95207ed46b39715bf14e374e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxInteractDistance: 0
+  MaxInteractDistance: 3

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HPBar : MonoBehaviour
+public class PlayerHPBar : MonoBehaviour
 {
 	// This script is to be placed on the same object as the UnitScript, otherwise it won't work
 	[SerializeField] private Slider Bar;

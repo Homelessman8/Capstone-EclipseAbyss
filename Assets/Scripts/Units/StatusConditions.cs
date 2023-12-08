@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class StatusConditions : MonoBehaviour
 {
     public abstract class Status
     {
-        public bool IsDisplayedOnStatBar = false;
-		public bool UsesTimer = false;
-		public Sprite StatBarSprite = null;
+        public bool UsesTimer = false;
         public float TimeUntilGone = -1;
+
+        public bool IsDisplayedOnStatBar = false;
+        public Sprite StatBarSprite = null;
+        public Color StatusColor = Color.white;
+        public string DisplayText = "0";
         public virtual bool Process(UnitScript unit)
         {
             // Triggers every frame
@@ -26,7 +27,7 @@ public class StatusConditions : MonoBehaviour
         }
         public virtual void OnTimeout()
         {
-			// Happens when the timer expires if the timer is included.
-		}
-	}
+            // Happens when the timer expires if the timer is included.
+        }
+    }
 }
