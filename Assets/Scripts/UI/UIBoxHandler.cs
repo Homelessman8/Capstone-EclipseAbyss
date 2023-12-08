@@ -8,7 +8,7 @@ public class UIBoxHandler : MonoBehaviour
     [Header("Movement")]
     Vector2 OffscreenPosition;
     Vector2 OnscreenPosition;
-    readonly private float speed = 1f;
+    public float speed = 1f;
     RectTransform MyTransform;
     float MoveProgress = 0;
     private enum Direction { Left, Right, Top, Bottom };
