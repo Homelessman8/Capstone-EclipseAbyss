@@ -23,12 +23,16 @@ public class AxePlay : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+       if(Input.GetMouseButton(0))
         {
-            Debug.Log($"Hit Enemy {1}");
-            Actions.OnEnemyAttacked?.Invoke();
-            collision.gameObject.GetComponent<Enemy>().currentHealth -= 1;
+            if (collision.gameObject.CompareTag("Enemy"))
+            {
+                Debug.Log($"Hit Enemy {1}");
+                Actions.OnEnemyAttacked?.Invoke();
+                collision.gameObject.GetComponent<Enemy>().currentHealth -= 1;
+            }
         }
+      
 
     }
 
