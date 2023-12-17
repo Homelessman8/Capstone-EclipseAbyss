@@ -6,6 +6,7 @@ public class MinotaurAttackState : MinotaurStates
 {
     public override void OnStateEnter(MinotaurStateManager minotaurManager)
     {
+        //minotaurManager.animator.SetBool("isWalking", false);
         minotaurManager.animator.SetBool("isAttacking", true);
         Debug.Log("Attacking Player");
     }

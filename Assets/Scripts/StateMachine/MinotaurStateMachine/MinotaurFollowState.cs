@@ -7,6 +7,7 @@ public class MinotaurFollowState : MinotaurStates
     public override void OnStateEnter(MinotaurStateManager minotaurManager)
     {
         minotaurManager.transform.LookAt(minotaurManager.playerTransform);
+        minotaurManager.animator.SetBool("isIdle", false);
         minotaurManager.animator.SetBool("isWalking", true);
         Debug.Log("Minotaur is Following");
     }
@@ -21,16 +22,16 @@ public class MinotaurFollowState : MinotaurStates
         //ExitCondition to Idle State if distance to large
         if (minotaurManager.playerTransform != null)
         {
-            if (Vector3.Distance(minotaurManager.transform.position, minotaurManager.playerTransform.position) > 10f)
+            if (Vector3.Distance(minotaurManager.transform.position, minotaurManager.playerTransform.position) > 9f)
             {
                 minotaurManager.ChangeState(minotaurManager.minotaurIdleState);
                 minotaurManager.animator.SetBool("isWalking", false);
-                //minotaurManager.animator.SetBool("isIdle", true);
+                minotaurManager.animator.SetBool("isIdle", true);
 
             }
 
             //Exit Condition to Attack State if distance is too small
-            if (Vector3.Distance(minotaurManager.transform.position, minotaurManager.playerTransform.position) < 4f)
+            if (Vector3.Distance(minotaurManager.transform.position, minotaurManager.playerTransform.position) < 3.9f)
             {
                 minotaurManager.ChangeState(minotaurManager.minotaurAttackState);
             }
