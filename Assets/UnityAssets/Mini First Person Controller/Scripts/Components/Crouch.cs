@@ -25,6 +25,9 @@ public class Crouch : MonoBehaviour
     public bool IsCrouched { get; private set; }
     public event System.Action CrouchStart, CrouchEnd;
 
+    [SerializeField]
+    private Animator animator;
+
 
     void Reset()
     {
@@ -79,6 +82,7 @@ public class Crouch : MonoBehaviour
             // Set IsCrouched state.
             if (!IsCrouched)
             {
+                animator.SetBool("isCrouch", true);
                 IsCrouched = true;
                 SetSpeedOverrideActive(true);
                 CrouchStart?.Invoke();
@@ -91,6 +95,7 @@ public class Crouch : MonoBehaviour
                 // Rise the head back up.
                 if (headToLower)
                 {
+                    animator.SetBool("isCrouch", false);
                     headToLower.localPosition = new Vector3(headToLower.localPosition.x, defaultHeadYLocalPosition.Value, headToLower.localPosition.z);
                 }
 
