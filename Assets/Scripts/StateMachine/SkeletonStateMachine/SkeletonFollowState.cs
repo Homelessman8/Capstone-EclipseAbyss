@@ -8,7 +8,7 @@ public class SkeletonFollowState : SkeletonStates
     {
         manager.transform.LookAt(manager.playerTransform);
         manager.animator.SetBool("isWalking", true);
-        Debug.Log("Skeleton is Following");
+        //Debug.Log("Skeleton is Following");
     }
 
     public override void OnStateExit(SkeletonStateManager manager)
