@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 	// Character speed
-	public float speed = 7.5f;
+	public float speed = 4.5f;
 	// This variable isn't used to track anything, if you want dashing to be part of an ability or something, feel free to adjust
 	public bool IsDashingAllowed = true;
 	// Direction of movement, as inputted by the player
