@@ -8,8 +8,10 @@ public class Shield : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private Animator swordAnimator;
+
     public GameObject greenShield;
-    public GameObject sword;
 
     
     void Update()
@@ -17,13 +19,15 @@ public class Shield : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             animator.SetBool("isShield", true);
-            sword.gameObject.SetActive(false);
+            swordAnimator.SetBool("isThrusting", false);
+            swordAnimator.SetBool("isSlashing", false);
         }
 
         if (Input.GetKeyUp(KeyCode.E))
         {
             animator.SetBool("isShield", false);
-            sword.gameObject.SetActive(true);
+            swordAnimator.SetBool("isThrusting", true);
+            swordAnimator.SetBool("isSlashing", true);
         }
     }
 }
