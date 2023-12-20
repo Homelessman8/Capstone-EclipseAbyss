@@ -23,7 +23,7 @@ public class SkeletonIdleState : SkeletonStates
         if (manager.agent.remainingDistance < 0.1f)
         {
             currentTargetPoint++;
-            if (currentTargetPoint >= manager.targetPoints.Length)
+            if (currentTargetPoint>= manager.targetPoints.Length)
             {
                 currentTargetPoint = 0; 
             }
