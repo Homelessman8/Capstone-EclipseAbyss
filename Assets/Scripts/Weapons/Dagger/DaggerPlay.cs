@@ -7,13 +7,13 @@ using UnityEngine;
 
 public class DaggerPlay : MonoBehaviour
 {
-    //[SerializeField]
-    //private Animator animator;
+    [SerializeField]
+    private Animator animator;
 
     [Header("References")]
     public GameObject daggerPrefab;
     public Transform daggerPos;
-    public Transform cam;
+    private Transform cam;
 
     [Header("Settings")]
     public int totalThrows;
@@ -44,7 +44,7 @@ public class DaggerPlay : MonoBehaviour
     {
         readyToThrow = false;
         GameObject dagger = Instantiate(daggerPrefab, daggerPos.position, transform.rotation);
-        //animator.SetBool("isThrow", true);
+        animator.SetBool("isThrow", true);
         Rigidbody rb = dagger.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         Vector3 forceDirection = cam.transform.forward;
