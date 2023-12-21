@@ -8,6 +8,7 @@ public class AxePlay : MonoBehaviour
     private Animator animator;
 
     public GameObject Axe;
+    private Collider collision;
 
     void Update()
     {
@@ -21,19 +22,14 @@ public class AxePlay : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-       if(Input.GetMouseButton(0))
-        {
-            if (collision.gameObject.CompareTag("Enemy"))
-            {
-                Debug.Log($"Hit Enemy {1}");
-                Actions.OnEnemyAttacked?.Invoke();
-                collision.gameObject.GetComponent<Enemy>().currentHealth -= 1;
-            }
-        }
-      
-
-    }
+   // private void //OnCollisionEnter(Collision collision)
+   // {
+          //  if (collision.gameObject.CompareTag("Enemy"))
+           // {
+           //     Debug.Log($"Hit Enemy {1}");
+             //   Actions.OnEnemyAttacked?.Invoke();
+              //  collision.gameObject.GetComponent<Enemy>().currentHealth -= 1;
+            //}
+   // }
 
 }

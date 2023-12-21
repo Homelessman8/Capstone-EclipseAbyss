@@ -38,7 +38,7 @@ public class SwordPlay : MonoBehaviour
         {
             Debug.Log($"Hit Enemy {1}");
             Actions.OnEnemyAttacked?.Invoke();
-            collision.gameObject.GetComponent<Enemy>().currentHealth -= 1;
+            collision.gameObject.GetComponent<EnemyHealth>().currentHealth -= 1;
             Debug.Log("Hit Object");
         }
             

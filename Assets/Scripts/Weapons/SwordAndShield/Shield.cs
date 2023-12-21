@@ -16,14 +16,14 @@ public class Shield : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             animator.SetBool("isShield", true);
             swordAnimator.SetBool("isThrusting", false);
             swordAnimator.SetBool("isSlashing", false);
         }
 
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.Q))
         {
             animator.SetBool("isShield", false);
             swordAnimator.SetBool("isThrusting", true);

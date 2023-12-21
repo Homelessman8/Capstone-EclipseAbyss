@@ -35,7 +35,8 @@ public class DaggerPlay : MonoBehaviour
     {
         if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
-          ShootDagger();
+            animator.SetBool("isThrow", true);
+            ShootDagger();
         } 
        
     }
@@ -44,7 +45,7 @@ public class DaggerPlay : MonoBehaviour
     {
         readyToThrow = false;
         GameObject dagger = Instantiate(daggerPrefab, daggerPos.position, transform.rotation);
-        animator.SetBool("isThrow", true);
+        
         Rigidbody rb = dagger.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         Vector3 forceDirection = cam.transform.forward;
@@ -76,7 +77,7 @@ public class DaggerPlay : MonoBehaviour
         {
             Debug.Log($"Hit Enemy {1}");
             Actions.OnEnemyAttacked?.Invoke();
-            collision.gameObject.GetComponent<Enemy>().currentHealth -= 1;
+            collision.gameObject.GetComponent<EnemyHealth>().currentHealth -= 1;
             Debug.Log("Hit Object");
         }
 

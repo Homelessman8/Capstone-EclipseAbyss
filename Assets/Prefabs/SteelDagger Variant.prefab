@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SteelDagger Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010995592560, guid: f9b1bd39a30fb93448737f5c3254252c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010543512150, guid: f9b1bd39a30fb93448737f5c3254252c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.21515274
