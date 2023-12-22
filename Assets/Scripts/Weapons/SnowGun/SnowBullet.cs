@@ -6,7 +6,7 @@ public class SnowBullet : MonoBehaviour
 {
     void Update()
     {
-        Destroy(gameObject, 10f);
+        Destroy(gameObject,4f);
     }
     private void OnCollisionEnter(Collision collision)
     {
