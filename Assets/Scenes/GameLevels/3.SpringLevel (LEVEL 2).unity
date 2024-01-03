@@ -408,6 +408,8 @@ MonoBehaviour:
   AddGaps: 0
   GoalPrefab: {fileID: 0}
   FinishPortalPrefab: {fileID: 1417962019}
+  EnemyPrefab: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+  MaxEnemies: 5
   MinDistanceFromPlayer: 10
 --- !u!4 &1307224666
 Transform:
