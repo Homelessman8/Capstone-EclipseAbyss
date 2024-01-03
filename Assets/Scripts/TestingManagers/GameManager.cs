@@ -120,12 +120,19 @@ public class GameManager : MonoBehaviour
         //gameEndMenu.SetActive(true);
     }
 
+    private void Pause()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        //gamepauseMenu.SetActive(true);
+    }
+
     public enum State
     {
         Level1,
         Level2,
         Level3,
         Level4,
+        Pause,
         RestartLevel,
         GameOver,
         GameOverExit,
