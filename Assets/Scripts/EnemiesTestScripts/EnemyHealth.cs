@@ -12,16 +12,6 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    private void OnEnable()
-    {
-        Actions.OnEnemyAttacked += TakeDamage;
-    }
-
-    private void OnDisable()
-    {
-        Actions.OnEnemyAttacked -= TakeDamage;
-    }
-
     public void TakeDamage()
     {
         currentHealth--;

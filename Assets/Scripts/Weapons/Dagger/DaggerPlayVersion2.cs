@@ -26,8 +26,7 @@ public class DaggerPlayVersion2 : MonoBehaviour
             if (collision.gameObject.CompareTag("Enemy"))
             {
                 Debug.Log($"Hit Enemy {1}");
-                Actions.OnEnemyAttacked?.Invoke();
-                collision.gameObject.GetComponent<EnemyHealth>().currentHealth -= 1;
+                collision.gameObject.GetComponent<EnemyHealth>().TakeDamage();
             }
     }
 }
