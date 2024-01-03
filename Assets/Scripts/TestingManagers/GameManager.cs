@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     private LevelManager currentLevel;
     private int currentLevelIndex;
 
+    public GameObject gamePauseMenu;
+    public GameObject gameOverMenu;
+    public GameObject gameEndMenu;
+
     private void Awake()
     {
         if (Instance == null)
@@ -26,7 +30,7 @@ public class GameManager : MonoBehaviour
     {
         if (levelManagers.Length > 0)
         {
-            ChangeState(State.Level1, levelManagers[currentLevelIndex]);
+            ChangeState(State.StartGame, levelManagers[currentLevelIndex]);
         }
 
     }
@@ -38,17 +42,23 @@ public class GameManager : MonoBehaviour
 
         switch (currentState)
         {
-            case State.Level1:
-                Level1();
+            case State.StartGame:
+                StartGame();
                 break;
-            case State.Level2:
-                Level2();
+            case State.InitiateLevel:
+                InitiateLevel();
                 break;
-            case State.Level3:
-                Level3();
+            case State.RunLevel:
+                RunLevel();
                 break;
-            case State.Level4:
-                Level4();
+            case State.CompleteLevel:
+                CompleteLevel();
+                break;
+            case State.Pause:
+                Pause();
+                break;
+            case State.UnPause:
+                UnPause();
                 break;
             case State.GameOver:
                 GameOver();
@@ -66,28 +76,55 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Level1()
+    private void OnEnable()
     {
-        Debug.Log("Starting Level 1");
-        ChangeState(State.Level2, currentLevel);
+        Actions.OnPlayerDied += GameOver;
+
     }
 
-    private void Level2()
+    private void OnDisable()
     {
-        Debug.Log("Starting Level 2");
-        ChangeState(State.Level3, currentLevel);
+        Actions.OnPlayerDied -= GameOver;
     }
 
-    private void Level3()
+    private void StartGame()
     {
-        Debug.Log("Starting Level 3");
-        ChangeState(State.Level4, currentLevel);
+        Debug.Log("Start Game");
+        ChangeState(State.InitiateLevel, currentLevel);
     }
 
-    private void Level4()
+    private void InitiateLevel()
     {
-        Debug.Log("Starting Level 4");
-        ChangeState(State.GameEnd, currentLevel);
+        Debug.Log("Start Level");
+        ChangeState(State.RunLevel, currentLevel);
+    }
+
+    private void RunLevel()
+    {
+        Debug.Log("In Level");
+    }
+
+    private void CompleteLevel()
+    {
+        Debug.Log("End of Level");
+        ChangeState(State.InitiateLevel, levelManagers[++currentLevelIndex]);
+    }
+
+    public void Pause()
+    {
+        Debug.Log("Paused");
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0;
+        gamePauseMenu.SetActive(true);
+      
+    }
+
+    public void UnPause()
+    {
+        Debug.Log("Back to Game");
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1;
+        gamePauseMenu.SetActive(false);
     }
 
     public void RestartLevel()
@@ -105,7 +142,7 @@ public class GameManager : MonoBehaviour
     private void GameOverExit()
     {
         Cursor.lockState = CursorLockMode.None;
-        //gameOverMenu.SetActive(true);
+        gameOverMenu.SetActive(true);
     }
 
     private void GameEnd()
@@ -117,22 +154,17 @@ public class GameManager : MonoBehaviour
     private void GameEndExit()
     {
         Cursor.lockState = CursorLockMode.None;
-        //gameEndMenu.SetActive(true);
-    }
-
-    private void Pause()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        //gamepauseMenu.SetActive(true);
+        gameEndMenu.SetActive(true);
     }
 
     public enum State
     {
-        Level1,
-        Level2,
-        Level3,
-        Level4,
+        StartGame,
+        InitiateLevel,
+        RunLevel,
+        CompleteLevel,
         Pause,
+        UnPause,
         RestartLevel,
         GameOver,
         GameOverExit,
