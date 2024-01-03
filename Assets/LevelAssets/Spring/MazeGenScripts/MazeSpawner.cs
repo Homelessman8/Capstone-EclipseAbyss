@@ -28,6 +28,9 @@ public class MazeSpawner : MonoBehaviour
     public bool AddGaps = true;
     public GameObject GoalPrefab = null;
     public GameObject FinishPortalPrefab; // Reference to the finish portal prefab
+    public GameObject EnemyPrefab; // Reference to the enemy prefab
+    public int MaxEnemies = 5; // Maximum number of enemies to spawn
+
     public float MinDistanceFromPlayer = 10f; // Minimum distance from the player
 
     private BasicMazeGenerator mMazeGenerator = null;
@@ -114,6 +117,8 @@ public class MazeSpawner : MonoBehaviour
                     tmp = Instantiate(GoalPrefab, new Vector3(x, 1, z), Quaternion.Euler(0, 0, 0)) as GameObject;
                     tmp.transform.parent = transform;
                 }
+
+
             }
         }
 
@@ -134,6 +139,9 @@ public class MazeSpawner : MonoBehaviour
 
         // Instantiate the finish portal at a random position far from the player
         InstantiateFinishPortal();
+
+        // Spawn enemies randomly
+        SpawnEnemies();
     }
 
     // Instantiate finish portal at a random position within the maze, far from the player
@@ -159,6 +167,28 @@ public class MazeSpawner : MonoBehaviour
             // Instantiate the finish portal at the chosen position
             GameObject finishPortal = Instantiate(FinishPortalPrefab, portalPosition, Quaternion.Euler(0, 0, 0)) as GameObject;
             finishPortal.transform.parent = transform;
+        }
+    }
+
+    // Spawn enemies randomly within the maze
+    void SpawnEnemies()
+    {
+        if (EnemyPrefab != null)
+        {
+            int randomRow = Random.Range(0, Rows);
+            int randomColumn = Random.Range(0, Columns);
+
+            float x = randomColumn * (CellWidth + (AddGaps ? 0.2f : 0));
+            float z = randomRow * (CellHeight + (AddGaps ? 0.2f : 0));
+
+            // Check if the position is far from the player before spawning an enemy
+            if (playerTransform != null && Vector3.Distance(playerTransform.position, new Vector3(x, 0, z)) > MinDistanceFromPlayer)
+            {
+                GameObject enemy = Instantiate(EnemyPrefab, new Vector3(x, 1, z), Quaternion.identity) as GameObject;
+                enemy.transform.parent = transform;
+
+                // You can add additional enemy-related logic or components here
+            }
         }
     }
 }
