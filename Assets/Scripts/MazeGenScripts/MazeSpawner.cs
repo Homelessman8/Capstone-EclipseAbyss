@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
+using Unity.AI.Navigation;
 
 //<summary>
 //Game object, that creates maze and instantiates it in scene
 //</summary>
 public class MazeSpawner : MonoBehaviour
 {
+    public GameObject player;
+    public NavMeshSurface surface;
+
+	private bool playerSpawned = false;
     public enum MazeGenerationAlgorithm
     {
         PureRecursive,
@@ -118,7 +124,11 @@ public class MazeSpawner : MonoBehaviour
                     tmp.transform.parent = transform;
                 }
 
+                //Update Nav mesh
+                surface.BuildNavMesh();
 
+                // Spawn enemies randomly
+                SpawnEnemies();
             }
         }
 
@@ -140,8 +150,7 @@ public class MazeSpawner : MonoBehaviour
         // Instantiate the finish portal at a random position far from the player
         InstantiateFinishPortal();
 
-        // Spawn enemies randomly
-        SpawnEnemies();
+
     }
 
     // Instantiate finish portal at a random position within the maze, far from the player
