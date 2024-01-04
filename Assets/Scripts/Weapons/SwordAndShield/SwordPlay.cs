@@ -37,7 +37,7 @@ public class SwordPlay : MonoBehaviour
         if(collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log($"Hit Enemy {1}");
-            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage();
+            collision.gameObject.GetComponent<EnemyHealth>().currentHealth -=1;
         }
             
     }

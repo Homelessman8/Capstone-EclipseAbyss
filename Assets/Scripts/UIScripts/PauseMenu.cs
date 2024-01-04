@@ -17,6 +17,5 @@ public class PauseMenu : MonoBehaviour
            //isPaused = true;
            gameManager.Pause();
         }
-
     }
 }

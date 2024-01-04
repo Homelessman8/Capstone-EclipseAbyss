@@ -5,10 +5,12 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField]
-    private Transform player;
+    // [SerializeField]
+    //private Transform player;
 
-    private int maxHealth = 1;
+    public GameObject player;
+
+    private int maxHealth = 100;
     private int currentHealth;
 
     Rigidbody rb;
