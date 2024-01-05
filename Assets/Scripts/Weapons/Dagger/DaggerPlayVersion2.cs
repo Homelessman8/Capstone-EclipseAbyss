@@ -8,16 +8,45 @@ public class DaggerPlayVersion2 : MonoBehaviour
     private Animator animator;
 
     public GameObject Dagger;
+    public int currentClip, maxClipSize = 5, currentAmmo, maxAmmoSize = 5;
 
+    
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            animator.SetBool("isThrow", true);
+            if (currentClip > 0)
+            {
+                animator.SetBool("isThrow", true);
+                currentClip--;
+            }
         }
         else
         {
             animator.SetBool("isThrow", false);
+        }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            DaggerReload();
+        }
+
+    }
+
+    public void DaggerReload()
+    {
+        int reloadAmount = maxClipSize - currentClip;
+        reloadAmount = (currentAmmo - reloadAmount) >= 0 ? reloadAmount: currentAmmo;
+        currentClip += reloadAmount;
+        currentAmmo -= reloadAmount;
+    }
+
+    public void AddDaggers(int ammoAmount)
+    {
+        currentAmmo += ammoAmount;
+        if (currentAmmo > maxAmmoSize)
+        {
+            currentAmmo = maxAmmoSize;
         }
     }
 

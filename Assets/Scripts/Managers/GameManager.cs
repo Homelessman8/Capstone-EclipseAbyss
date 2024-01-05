@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -15,13 +16,17 @@ public class GameManager : MonoBehaviour
     private LevelManager currentLevel;
     private int currentLevelIndex;
 
+    public GameObject player;
     public GameObject gamePauseMenu;
     public GameObject gameOverMenu;
     public GameObject gameEndMenu;
     public GameObject gameOverCamera;
     public GameObject mainCharacterCamera;
     public GameObject endgameUI;  // Reference to the endgame UI GameObject.
+    public GameObject healthBar;
+    public TextMeshProUGUI daggerText;
     public TextMeshProUGUI timerText;
+    
 
     private void Awake()
     {
@@ -114,10 +119,13 @@ public class GameManager : MonoBehaviour
         Debug.Log("End of Level");
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f;  // Pause the game by setting the time scale to 0.
+        player.gameObject.SetActive(false);
         gameOverCamera.gameObject.SetActive(true);
         mainCharacterCamera.gameObject.SetActive(false);
         timerText.gameObject.SetActive(false);
+        daggerText.gameObject.SetActive(false);
         endgameUI.SetActive(true);   // Activate the endgame UI GameObject.
+        healthBar.SetActive(false);
         gamePauseMenu = null;
         //ChangeState(State.InitiateLevel, levelManagers[++currentLevelIndex]);
     }
@@ -127,11 +135,14 @@ public class GameManager : MonoBehaviour
         Debug.Log("Paused");
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
+        player.gameObject.SetActive(false);
         gameOverCamera.gameObject.SetActive(true);
         mainCharacterCamera.gameObject.SetActive(false);
         timerText.gameObject.SetActive(false);
         gamePauseMenu.SetActive(true);
-      
+        healthBar.SetActive(false);
+        daggerText.gameObject.SetActive(false);
+
     }
 
     public void UnPause()
@@ -139,19 +150,25 @@ public class GameManager : MonoBehaviour
         Debug.Log("Back to Game");
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
+        player.gameObject.SetActive(true);
         gameOverCamera.gameObject.SetActive(false);
         mainCharacterCamera.gameObject.SetActive(true);
         timerText.gameObject.SetActive(true);
         gamePauseMenu.SetActive(false);
+        healthBar.SetActive(true);
+        daggerText.gameObject.SetActive(true);
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
+        player.gameObject.SetActive(true);
         gameOverCamera.gameObject.SetActive(false);
         mainCharacterCamera.gameObject.SetActive(true);
         timerText.gameObject.SetActive(true);
+        healthBar.SetActive(true);
+        daggerText.gameObject.SetActive(true);
     }
 
     public void GameOver()
@@ -163,10 +180,13 @@ public class GameManager : MonoBehaviour
     private void GameOverExit()
     {
         Cursor.lockState = CursorLockMode.None;
+        player.gameObject.SetActive(false);
         gameOverCamera.gameObject.SetActive(true);
         mainCharacterCamera.gameObject.SetActive(false);
         gameOverMenu.SetActive(true);
         timerText.gameObject.SetActive(false);
+        daggerText.gameObject.SetActive(false);
+        healthBar.SetActive(false);
         gamePauseMenu = null;
     }
 
