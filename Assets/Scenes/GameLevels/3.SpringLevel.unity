@@ -382,7 +382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1244396235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,6 +458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30b40727e5fc0045a9dcf77c2519ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  surface: {fileID: 1244396235}
   Algorithm: 1
   FullRandom: 1
   RandomSeed: 12345
@@ -470,7 +472,7 @@ MonoBehaviour:
   CellHeight: 4
   AddGaps: 0
   GoalPrefab: {fileID: 0}
-  FinishPortalPrefab: {fileID: 1417962019}
+  FinishPortalPrefab: {fileID: 4658941425271683438, guid: b594908fa45dd5a4cae588f1a6972830, type: 3}
   EnemyPrefab: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
   MaxEnemies: 5
   MinDistanceFromPlayer: 10

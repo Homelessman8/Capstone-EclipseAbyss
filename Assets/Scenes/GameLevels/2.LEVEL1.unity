@@ -4942,14 +4942,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndLevelPortalPlacement
       objectReference: {fileID: 0}
-    - target: {fileID: 5897510735427111426, guid: b594908fa45dd5a4cae588f1a6972830, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5b0be96218e756142a2e34319dbed986, type: 2}
-    - target: {fileID: 6796458378650329264, guid: b594908fa45dd5a4cae588f1a6972830, type: 3}
-      propertyPath: endgameUI
-      value: 
-      objectReference: {fileID: 5258648}
     - target: {fileID: 6796458378650329264, guid: b594908fa45dd5a4cae588f1a6972830, type: 3}
       propertyPath: gameManager
       value: 
