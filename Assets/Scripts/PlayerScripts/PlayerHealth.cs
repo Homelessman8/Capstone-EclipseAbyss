@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
     Rigidbody rb;
 
-    //public HealthUI healthBar;
+    public HealthUI healthBar;
 
     public GameManager gameManager;
 
@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     private void OnEnable()
@@ -48,7 +49,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth--;
         Debug.Log($"Hit Player: {currentHealth}");
 
-        //healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
