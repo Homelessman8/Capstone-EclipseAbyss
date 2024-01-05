@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/GameLevels/3.SpringLevel.unity
     guid: 7e03644cb9a36384caa8170a2e22865a
   - enabled: 1
-    path: Assets/Scenes/GameLevels/4.SummerLevel (LEVEL 3).unity
+    path: Assets/Scenes/GameLevels/4.SummerLevel.unity
     guid: 00fc4714587d69141a7d0a4229e60863
   - enabled: 1
     path: Assets/Scenes/GameLevels/5.WinterLevel (LEVEL 4).unity
