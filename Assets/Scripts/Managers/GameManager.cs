@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject endgameUI;  // Reference to the endgame UI GameObject.
     public GameObject healthBar;
     public TextMeshProUGUI daggerText;
+    public TextMeshProUGUI bulletText;
     public TextMeshProUGUI timerText;
     
 
@@ -124,6 +125,7 @@ public class GameManager : MonoBehaviour
         mainCharacterCamera.gameObject.SetActive(false);
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        bulletText.gameObject.SetActive(false);
         endgameUI.SetActive(true);   // Activate the endgame UI GameObject.
         healthBar.SetActive(false);
         gamePauseMenu = null;
@@ -142,6 +144,7 @@ public class GameManager : MonoBehaviour
         gamePauseMenu.SetActive(true);
         healthBar.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        bulletText.gameObject.SetActive(false);
 
     }
 
@@ -157,6 +160,7 @@ public class GameManager : MonoBehaviour
         gamePauseMenu.SetActive(false);
         healthBar.SetActive(true);
         daggerText.gameObject.SetActive(true);
+        bulletText.gameObject.SetActive(true);
     }
 
     public void RestartLevel()
@@ -169,6 +173,7 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(true);
         healthBar.SetActive(true);
         daggerText.gameObject.SetActive(true);
+        bulletText.gameObject.SetActive(true);
     }
 
     public void GameOver()
@@ -186,6 +191,7 @@ public class GameManager : MonoBehaviour
         gameOverMenu.SetActive(true);
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        bulletText.gameObject.SetActive(false);
         healthBar.SetActive(false);
         gamePauseMenu = null;
     }

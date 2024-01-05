@@ -8,7 +8,7 @@ public class DaggerPlayVersion2 : MonoBehaviour
     private Animator animator;
 
     public GameObject Dagger;
-    public int currentClip, maxClipSize = 5, currentAmmo, maxAmmoSize = 5;
+    public int currentClip, maxClipSize, currentAmmo, maxAmmoSize;
 
     
     void Update()
