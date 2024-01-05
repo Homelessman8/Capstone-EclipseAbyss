@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1283842443
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -804,7 +804,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3513942528368287844}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3513942528368287844}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -1187,8 +1187,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ace6f4ddb43368b40b93d4677fcb6daa, type: 2}
-  m_sharedMaterial: {fileID: -5247435954530500709, guid: ace6f4ddb43368b40b93d4677fcb6daa, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1331,7 +1331,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -314432933
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 897c9671a8fb4e54d8a6ccf1ccdd4285, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1341,7 +1341,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!114 &8601982757368837621
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3513942528368287844}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 1
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1563848240028347395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EndgameMenu, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -1809,8 +1809,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: pause
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec4249c5b84d22341a8d22921b1596e2, type: 2}
-  m_sharedMaterial: {fileID: -6992956123517548008, guid: ec4249c5b84d22341a8d22921b1596e2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1997,7 +1997,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1563848240028347395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: EndgameMenu, Assembly-CSharp
         m_MethodName: LevelTwo
         m_Mode: 1
@@ -2218,7 +2218,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1283842443
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -1580709606, guid: bc30ab37cf4aefd4aa3e02cf030fdf86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2228,7 +2228,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7551046035754896206
@@ -2352,7 +2352,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3513942528368287844}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -2431,8 +2431,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Coins: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ace6f4ddb43368b40b93d4677fcb6daa, type: 2}
-  m_sharedMaterial: {fileID: -5247435954530500709, guid: ace6f4ddb43368b40b93d4677fcb6daa, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2456,7 +2456,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.3
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2644,10 +2644,11 @@ GameObject:
   - component: {fileID: 1245876333384272416}
   - component: {fileID: 1206899077916465232}
   - component: {fileID: 7066399326545599575}
-  - component: {fileID: 3513942528368287844}
-  - component: {fileID: 2797855881306852088}
-  - component: {fileID: 8299220059942991803}
-  - component: {fileID: 1563848240028347395}
+  - component: {fileID: 7384828290494258343}
+  - component: {fileID: 5442108622578644298}
+  - component: {fileID: 3541155671382305113}
+  - component: {fileID: 5107723710863352724}
+  - component: {fileID: 2367509648453775576}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -2743,7 +2744,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3513942528368287844
+--- !u!114 &7384828290494258343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2752,12 +2753,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8837783655470257401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b034be042b8d394ebfdf06d443c1fc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b727172c38adac499807b57e83d1be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yourButton: {fileID: 8601982757368837621}
-  pauseMenuUI: {fileID: 508174815618760384}
---- !u!114 &2797855881306852088
+--- !u!114 &5442108622578644298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2766,11 +2765,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8837783655470257401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc5c57a1afa7ef14f8500f06b8de1a53, type: 3}
+  m_Script: {fileID: 11500000, guid: 14857231cef96b544a386c368f65344d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeFeedback: {fileID: 3580861462446760587}
---- !u!114 &8299220059942991803
+  gameManager: {fileID: 0}
+--- !u!114 &3541155671382305113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2779,11 +2778,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8837783655470257401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86a16860d62147643a2a82182fa7f3f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 264cb973e63d5ac48b2d5f317a92baf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameOverUI: {fileID: 9084141302048866655}
---- !u!114 &1563848240028347395
+  timeFeedback: {fileID: 0}
+--- !u!114 &5107723710863352724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2792,10 +2791,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8837783655470257401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f792b8242e0c9ef468f6114054e7cdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: 69ffc2fceee2a28499daa26ce5f69024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endgameUI: {fileID: 1151822896679469733}
+  endgameUI: {fileID: 0}
+--- !u!114 &2367509648453775576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837783655470257401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93fba07401648fc4688e3ddc4590e8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9084141302048866655
 GameObject:
   m_ObjectHideFlags: 0
