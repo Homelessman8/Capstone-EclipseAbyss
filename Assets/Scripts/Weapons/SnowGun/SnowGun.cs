@@ -12,22 +12,28 @@ public class SnowGun : MonoBehaviour
 
     private Rigidbody rb;
 
+    SnowGunAnimation snowGunAnimation;
+
     void Start()
     {
+        snowGunAnimation = GetComponent<SnowGunAnimation>();
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (snowGunAnimation.isAiming == true)
         {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+            }
         }
-
         if (Input.GetKeyDown(KeyCode.R))
         {
             BulletReload();
         }
+
     }
 
     void Shoot()

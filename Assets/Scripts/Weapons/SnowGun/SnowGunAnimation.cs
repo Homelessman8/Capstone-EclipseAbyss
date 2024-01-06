@@ -9,15 +9,19 @@ public class SnowGunAnimation : MonoBehaviour
 
     public GameObject Gun;
 
+    public bool isAiming = false;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
+            isAiming = true;
             animator.SetBool("isAiming", true);
         }
 
         if (Input.GetMouseButtonUp(1))
         {
+            isAiming = false;
             animator.SetBool("isAiming", false);
         }
     }

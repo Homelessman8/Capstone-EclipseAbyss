@@ -20,7 +20,6 @@ public class SkeletonStateManager : MonoBehaviour
     [HideInInspector]
     public NavMeshAgent agent;
 
-    [HideInInspector]
     public Transform playerTransform;
 
     public float moveSpeed;
@@ -37,6 +36,7 @@ public class SkeletonStateManager : MonoBehaviour
 
     void Update()
     {
+        transform.LookAt(playerTransform);
         currentState.OnStateUpdate(this);
     }
 
