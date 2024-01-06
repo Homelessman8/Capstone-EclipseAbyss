@@ -35,7 +35,7 @@ public class MazeSpawner : MonoBehaviour
     //public GameObject GoalPrefab = null;
     public GameObject FinishPortalPrefab; // Reference to the finish portal prefab
     //public GameObject EnemyPrefab; // Reference to the enemy prefab
-    public int MaxEnemies = 5; // Maximum number of enemies to spawn
+    //public int MaxEnemies = 5; // Maximum number of enemies to spawn
 
     public float MinDistanceFromPlayer = 10f; // Minimum distance from the player
 
