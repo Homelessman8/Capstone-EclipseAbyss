@@ -313,13 +313,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187102674}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1098, y: 0.01, z: 38.891}
+  m_LocalRotation: {x: 0.17308977, y: -0, z: -0, w: 0.9849061}
+  m_LocalPosition: {x: 13.79, y: 6.03, z: 41.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.935, y: 0, z: 0}
 --- !u!1001 &283743617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -444,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383218081}
   - component: {fileID: 383218080}
-  - component: {fileID: 383218079}
+  - component: {fileID: 383218082}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -452,26 +452,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &383218079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383218078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &383218080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,6 +482,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &383218082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383218078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1001 &462570449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -682,9 +692,37 @@ PrefabInstance:
       propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5237374999441388380, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500.3339
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237374999441388380, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237374999441388380, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237374999441388380, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000029564
+      objectReference: {fileID: 0}
     - target: {fileID: 5309672637448395747, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0.1764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309672637448395747, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309672637448395747, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309672637448395747, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6119161732670820820, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
       propertyPath: m_Pivot.y
@@ -746,6 +784,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.00000047684
       objectReference: {fileID: 0}
+    - target: {fileID: 7611063114699618099, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_text
+      value: 'FLOOR 2: The Verdant Depths'
+      objectReference: {fileID: 0}
     - target: {fileID: 7754374516811778400, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5
@@ -790,17 +832,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2147353566607784342, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
   m_PrefabInstance: {fileID: 462570449}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &462570451 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4763779200289044375, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
-  m_PrefabInstance: {fileID: 462570449}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &462570452 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8639993793573728180, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
@@ -1006,7 +1037,6 @@ MonoBehaviour:
   endgameUI: {fileID: 462570450}
   healthBar: {fileID: 716287210}
   daggerText: {fileID: 2066751915}
-  bulletText: {fileID: 462570451}
   timerText: {fileID: 77359772}
 --- !u!4 &962266889
 Transform:
@@ -1125,17 +1155,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2153120859293148746, guid: 4a4bf16d24083834eb8d956b4ab541f2, type: 3}
   m_PrefabInstance: {fileID: 1053118962}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1053118964 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5164565602666848505, guid: 4a4bf16d24083834eb8d956b4ab541f2, type: 3}
-  m_PrefabInstance: {fileID: 1053118962}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1244396234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,9 +1366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   daggerPlayV2: {fileID: 0}
-  snowGun: {fileID: 0}
   text: {fileID: 1913373509}
-  snowText: {fileID: 1053118964}
 --- !u!1 &1307224664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1836,14 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 962266888}
+    - target: {fileID: 7906118066624040629, guid: b594908fa45dd5a4cae588f1a6972830, type: 3}
+      propertyPath: m_text
+      value: "FLOOR 3: \nThe Scorching Dunes"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906118066624040629, guid: b594908fa45dd5a4cae588f1a6972830, type: 3}
+      propertyPath: m_fontSize
+      value: 32.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

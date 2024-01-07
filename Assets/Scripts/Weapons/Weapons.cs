@@ -13,7 +13,7 @@ public class Weapons : MonoBehaviour
 
     void Start()
     {
-        dagger.gameObject.SetActive(true);
+        dagger.gameObject.SetActive(false);
         axe.gameObject.SetActive(false);
         sword.gameObject.SetActive(false);
         shield.gameObject.SetActive(false);
@@ -48,15 +48,15 @@ public class Weapons : MonoBehaviour
             //snowGun.gameObject.SetActive(false);
         }
 
-        if (Input.GetKey(KeyCode.Alpha4))
-        {
+        //if (Input.GetKey(KeyCode.Alpha4))
+        //{
             //snowGun.gameObject.SetActive(true);
-            axe.gameObject.SetActive(false);
-            sword.gameObject.SetActive(false);
-            shield.gameObject.SetActive(false);
-            dagger.gameObject.SetActive(false);
+            //axe.gameObject.SetActive(false);
+            //sword.gameObject.SetActive(false);
+            //shield.gameObject.SetActive(false);
+            //dagger.gameObject.SetActive(false);
             
-        }
+        //}
     }
 
 

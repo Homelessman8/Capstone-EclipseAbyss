@@ -9,25 +9,36 @@ public class SwordPlay : MonoBehaviour
 
     public GameObject Sword;
 
+    public BoxCollider swordCollider;
+
+    void Start()
+    {
+        BoxCollider swordCollider = GetComponent<BoxCollider>();
+    }
+
     void Update()
     {
             if (Input.GetMouseButton(0))
             {
                 animator.SetBool("isSlashing", true);
+                swordCollider.enabled = true;
             }
             else
             {
                 animator.SetBool("isSlashing", false);
+                swordCollider.enabled = false;
             }
 
 
             if (Input.GetMouseButton(1))
             {
                 animator.SetBool("isThrusting", true);
+                swordCollider.enabled = true;
             }
             else
             {
                 animator.SetBool("isThrusting", false);
+                swordCollider.enabled = false;
             }
         
     }
