@@ -9,7 +9,7 @@ public class Weapons : MonoBehaviour
     public GameObject sword;
     public GameObject shield;
     public GameObject dagger;
-    public GameObject snowGun;
+    //public GameObject snowGun;
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class Weapons : MonoBehaviour
         axe.gameObject.SetActive(false);
         sword.gameObject.SetActive(false);
         shield.gameObject.SetActive(false);
-        snowGun.gameObject.SetActive(false);
+        //snowGun.gameObject.SetActive(false);
     }
     void Update()
     {
@@ -27,7 +27,7 @@ public class Weapons : MonoBehaviour
             sword.gameObject.SetActive(false);
             shield.gameObject.SetActive(false);
             axe.gameObject.SetActive(false);
-            snowGun.gameObject.SetActive(false);
+            //snowGun.gameObject.SetActive(false);
         }
 
         if(Input.GetKey(KeyCode.Alpha2) )
@@ -36,7 +36,7 @@ public class Weapons : MonoBehaviour
             shield.gameObject.SetActive(true);
             axe.gameObject.SetActive(false);
             dagger.gameObject.SetActive(false);
-            snowGun.gameObject.SetActive(false);
+            //snowGun.gameObject.SetActive(false);
         }
 
         if(Input.GetKey(KeyCode.Alpha3))
@@ -45,12 +45,12 @@ public class Weapons : MonoBehaviour
             sword.gameObject.SetActive(false);
             shield.gameObject.SetActive(false);
             dagger.gameObject.SetActive(false);
-            snowGun.gameObject.SetActive(false);
+            //snowGun.gameObject.SetActive(false);
         }
 
         if (Input.GetKey(KeyCode.Alpha4))
         {
-            snowGun.gameObject.SetActive(true);
+            //snowGun.gameObject.SetActive(true);
             axe.gameObject.SetActive(false);
             sword.gameObject.SetActive(false);
             shield.gameObject.SetActive(false);

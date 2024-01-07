@@ -6,20 +6,20 @@ using UnityEngine;
 public class AmmoUI : MonoBehaviour
 {
     public DaggerPlayVersion2 daggerPlayV2;
-    public SnowGun snowGun;
+ // public SnowGun snowGun;
     public TextMeshProUGUI text;
-    public TextMeshProUGUI snowText;
+    //public TextMeshProUGUI snowText;
 
     void Start()
     {
         UpdateDaggerText();
-        UpdateBulletText();
+       // UpdateBulletText();
     }
 
     private void Update()
     {
         UpdateDaggerText();
-        UpdateBulletText();
+       // UpdateBulletText();
     }
 
     public void UpdateDaggerText()
@@ -27,8 +27,8 @@ public class AmmoUI : MonoBehaviour
         text.text = $"{daggerPlayV2.currentClip}";
     }
 
-    public void UpdateBulletText()
-    {
-        snowText.text = $"{snowGun.currentClip}";
-    }
+   // public void UpdateBulletText()
+   // {
+    //    snowText.text = $"{snowGun.currentClip}";
+   // }
 }
