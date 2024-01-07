@@ -28,7 +28,7 @@ public class ZombieFollowState : ZombieStates
             }
 
             //Exit Condition to Attack State if distance is too small
-            if (Vector3.Distance(zombieManager.transform.position, zombieManager.playerTransform.position) < 3f)
+            if (Vector3.Distance(zombieManager.transform.position, zombieManager.playerTransform.position) < 1f)
             {
                 zombieManager.ChangeState(zombieManager.attackState);
             }

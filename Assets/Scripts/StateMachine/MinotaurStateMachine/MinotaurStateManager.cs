@@ -20,10 +20,9 @@ public class MinotaurStateManager : MonoBehaviour
     [HideInInspector]
     public NavMeshAgent agent;
 
-    [HideInInspector]
-    public Transform playerTransform;
-
     public float moveSpeed;
+
+    public Transform playerTransform;
 
     public Animator animator;
 
@@ -37,6 +36,7 @@ public class MinotaurStateManager : MonoBehaviour
 
     void Update()
     {
+        transform.LookAt(playerTransform);
         minotaurCurrentState.OnStateUpdate(this);
     }
 

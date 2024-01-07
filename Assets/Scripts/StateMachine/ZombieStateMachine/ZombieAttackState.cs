@@ -18,7 +18,7 @@ public class ZombieAttackState : ZombieStates
     public override void OnStateUpdate(ZombieStateManager zombieManager)
     {
         //Exit condition to go back to follow
-        if (Vector3.Distance(zombieManager.transform.position, zombieManager.playerTransform.position) < 6f)
+        if (Vector3.Distance(zombieManager.transform.position, zombieManager.playerTransform.position) < 2f)
         {
             zombieManager.animator.SetBool("isAttacking", false);
             zombieManager.ChangeState(zombieManager.followState);

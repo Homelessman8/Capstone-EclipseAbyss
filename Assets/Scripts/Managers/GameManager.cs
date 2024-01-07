@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject endgameUI;  // Reference to the endgame UI GameObject.
     public GameObject healthBar;
     public TextMeshProUGUI daggerText;
+    public TextMeshProUGUI startLevelText;
     //public TextMeshProUGUI bulletText;
     public TextMeshProUGUI timerText;
     
@@ -144,6 +145,7 @@ public class GameManager : MonoBehaviour
         gamePauseMenu.SetActive(true);
         healthBar.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        startLevelText.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
 
     }
@@ -160,6 +162,7 @@ public class GameManager : MonoBehaviour
         gamePauseMenu.SetActive(false);
         healthBar.SetActive(true);
         daggerText.gameObject.SetActive(true);
+        //startLevelText.gameObject.SetActive(true);
         //bulletText.gameObject.SetActive(true);
     }
 
