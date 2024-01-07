@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 5884394687792588396}
   m_Layer: 0
   m_Name: B-hand.L
-  m_TagString: EnemyWeapon
+  m_TagString: ZombieHands
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 8905687437431973479}
   m_Layer: 0
   m_Name: B-hand.R
-  m_TagString: EnemyWeapon
+  m_TagString: ZombieHands
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

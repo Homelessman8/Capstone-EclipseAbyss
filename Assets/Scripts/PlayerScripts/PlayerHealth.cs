@@ -28,13 +28,13 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnEnable()
     {
-        Actions.OnPlayerAttacked += TakeDamage;
+        Actions.OnPlayerAttacked += PlayerDied;
         Actions.OnPlayerDied += CancelInput;
     }
 
     private void OnDisable()
     {
-        Actions.OnPlayerAttacked -= TakeDamage;
+        Actions.OnPlayerAttacked -= PlayerDied;
         Actions.OnPlayerDied -= CancelInput;
     }
 
@@ -44,28 +44,83 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    private void TakeDamage()
+    private void OnCollisionEnter(Collision collision)
     {
-        currentHealth--;
-        Debug.Log($"Hit Player: {currentHealth}");
+        if (collision.gameObject.CompareTag("SkeletonWeapon"))
+        {
+            SkeletonDamage();
+        }
+
+        if (collision.gameObject.CompareTag("BigSkeleton"))
+        {
+            BigSkeletonDamage();
+        }
+
+        if (collision.gameObject.CompareTag("ZombieHands"))
+        {
+            ZombieDamage();
+        }
+
+        if (collision.gameObject.CompareTag("MinotaurAxe"))
+        {
+            MinotaurDamage();
+        }
+    }
+
+    private void SkeletonDamage()
+    {
+        currentHealth -= 5;
 
         healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
+            PlayerDied();
+        }
+    }
+
+    private void BigSkeletonDamage()
+    {
+        currentHealth -= 20;
+
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            PlayerDied();
+        }
+    }
+
+    private void ZombieDamage()
+    {
+        currentHealth -= 10;
+
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            PlayerDied();
+        }
+    }
+
+    private void MinotaurDamage()
+    {
+        currentHealth -= 50;
+
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            PlayerDied();
+        }
+    }
+    private void PlayerDied()
+    {
             currentHealth = 0;
             Actions.OnPlayerDied.Invoke();
             gameManager.GameOver();
             Debug.Log("Player Has Died");
-        }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("EnemyWeapon"))
-        {
-            TakeDamage();
-        }
-        
-    }
+   
 }

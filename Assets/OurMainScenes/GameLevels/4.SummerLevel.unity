@@ -875,6 +875,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dc940b0e4c1a9f644a443556980ba27a, type: 3}
   m_PrefabInstance: {fileID: 290234431}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &292701262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5119100093588903113, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+  m_PrefabInstance: {fileID: 1013878814}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &310575384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,6 +2594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 5030728000896699145, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.73
@@ -2642,11 +2651,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
---- !u!1 &924334232 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 250976177720222780, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
-  m_PrefabInstance: {fileID: 1013878814}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &929981127
 GameObject:
   m_ObjectHideFlags: 0
@@ -4245,7 +4249,7 @@ MonoBehaviour:
   levelManagers: []
   player: {fileID: 957983803}
   gamePauseMenu: {fileID: 821197408}
-  gameOverMenu: {fileID: 924334232}
+  gameOverMenu: {fileID: 292701262}
   gameEndMenu: {fileID: 1377616570}
   gameOverCamera: {fileID: 801611254}
   mainCharacterCamera: {fileID: 957983803}
@@ -5032,6 +5036,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896699145, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x

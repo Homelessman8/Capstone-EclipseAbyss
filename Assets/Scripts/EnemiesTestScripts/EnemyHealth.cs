@@ -12,9 +12,49 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage()
+    public void SwordDamage()
     {
-        currentHealth--;
+        currentHealth -= 2;
+
+        if (currentHealth <= 0)
+        {
+            EnemyDied();
+        }
+    }
+
+    public void DaggerDamage()
+    {
+        currentHealth -= 1;
+
+        if (currentHealth <= 0)
+        {
+            EnemyDied();
+        }
+    }
+
+    public void AxeDamage()
+    {
+        currentHealth -= 5;
+
+        if (currentHealth <= 0)
+        {
+            EnemyDied();
+        }
+    }
+
+    public void GunDamage()
+    {
+        currentHealth -= 1;
+
+        if (currentHealth <= 0)
+        {
+            EnemyDied();
+        }
+    }
+
+    public void EnemyDied()
+    {
+        currentHealth -=1;
 
         if (currentHealth <= 0)
         {

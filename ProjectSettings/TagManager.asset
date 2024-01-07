@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - EnemyWeapon
+  - SkeletonWeapon
+  - BigSkeleton
+  - MinotaurAxe
+  - ZombieHands
   layers:
   - Default
   - TransparentFX
