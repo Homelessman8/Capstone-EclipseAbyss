@@ -11,7 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject player;
 
     private int maxHealth = 100;
-    private int currentHealth;
+    [HideInInspector]
+    public int currentHealth;
 
     Rigidbody rb;
 
@@ -120,6 +121,12 @@ public class PlayerHealth : MonoBehaviour
             Actions.OnPlayerDied.Invoke();
             gameManager.GameOver();
             Debug.Log("Player Has Died");
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        healthBar.SetHealth(currentHealth);
     }
 
    
