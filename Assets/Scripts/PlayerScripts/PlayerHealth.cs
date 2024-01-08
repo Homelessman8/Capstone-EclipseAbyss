@@ -10,13 +10,17 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject player;
 
-    private int maxHealth = 100;
+    [HideInInspector]
+    public int maxHealth = 100;
+
     [HideInInspector]
     public int currentHealth;
 
     Rigidbody rb;
 
     public HealthUI healthBar;
+
+    public TextMeshProUGUI healthText;
 
     public GameManager gameManager;
 
@@ -25,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        healthText.SetText($"{maxHealth}");
     }
 
     private void OnEnable()
@@ -73,6 +78,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= 5;
 
         healthBar.SetHealth(currentHealth);
+        healthText.SetText($"{currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -85,6 +91,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= 20;
 
         healthBar.SetHealth(currentHealth);
+        healthText.SetText($"{currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -97,6 +104,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= 10;
 
         healthBar.SetHealth(currentHealth);
+        healthText.SetText($"{currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -109,6 +117,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= 50;
 
         healthBar.SetHealth(currentHealth);
+        healthText.SetText($"{ currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -127,6 +136,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth += amount;
         healthBar.SetHealth(currentHealth);
+        healthText.SetText($"{currentHealth}");
     }
 
    
