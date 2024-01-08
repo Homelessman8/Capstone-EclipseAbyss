@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossTrigger : MonoBehaviour
 {
-    public GameObject[] enemies;
+    public GameObject enemies;
     public GameObject bossWalls;
 
     private void OnTriggerEnter(Collider other)
@@ -12,7 +12,7 @@ public class BossTrigger : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             bossWalls.gameObject.SetActive(true);
-            Destroy(enemies[3]);
+            Destroy(enemies);
         }
        
     }
