@@ -57,5 +57,10 @@ public class DaggerPlayVersion2 : MonoBehaviour
                 Debug.Log($"Hit Enemy {1}");
                 collision.gameObject.GetComponent<EnemyHealth>().DaggerDamage();
             }
+
+        if (collision.gameObject.CompareTag("MinotaurEnemy"))
+        {
+            collision.gameObject.GetComponent<MinotaurHealth>().DaggerDamage();
+        }
     }
 }

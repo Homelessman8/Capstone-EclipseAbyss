@@ -1396,11 +1396,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minotaur V1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8399267296352871615, guid: b6f12d3f8dccdd8428efdc68eef50285, type: 3}
+      propertyPath: m_TagString
+      value: MinotaurEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1693111854515649428, guid: b6f12d3f8dccdd8428efdc68eef50285, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8399267296352871615, guid: b6f12d3f8dccdd8428efdc68eef50285, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 482606057}
   m_SourcePrefab: {fileID: 100100000, guid: b6f12d3f8dccdd8428efdc68eef50285, type: 3}
+--- !u!1 &482606056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8399267296352871615, guid: b6f12d3f8dccdd8428efdc68eef50285, type: 3}
+  m_PrefabInstance: {fileID: 482606055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &482606057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482606056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75aece252cddcda4e862b0f214650c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 50
+  maxHealth: 50
+  minotaurAnimator: {fileID: 482606058}
+--- !u!95 &482606058 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9207149215011373302, guid: b6f12d3f8dccdd8428efdc68eef50285, type: 3}
+  m_PrefabInstance: {fileID: 482606055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &487929713
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,6 +28,11 @@ public class AxePlay : MonoBehaviour
                 Debug.Log($"Hit Enemy {1}");
                 collision.gameObject.GetComponent<EnemyHealth>().AxeDamage();
             }
+
+        if (collision.gameObject.CompareTag("MinotaurEnemy"))
+        {
+            collision.gameObject.GetComponent<MinotaurHealth>().AxeDamage();
+        }
     }
 
 }

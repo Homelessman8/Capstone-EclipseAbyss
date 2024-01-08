@@ -39,6 +39,10 @@ public class SwordPlay : MonoBehaviour
             Debug.Log($"Hit Enemy {1}");
             collision.gameObject.GetComponent<EnemyHealth>().SwordDamage();
         }
+        if (collision.gameObject.CompareTag("MinotaurEnemy"))
+        {
+            collision.gameObject.GetComponent<MinotaurHealth>().SwordDamage();
+        }
             
     }
 }
