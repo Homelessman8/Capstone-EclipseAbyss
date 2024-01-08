@@ -1626,6 +1626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonEnemy12
       objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00000002651819
@@ -2588,6 +2592,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4134,7 +4142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
-      value: SkeletonEnemy5
+      value: BigSkeletonEnemy5
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_TagString
@@ -4238,7 +4246,7 @@ PrefabInstance:
       objectReference: {fileID: 372922266}
     - target: {fileID: 8736495417149161822, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: playerCheckDistance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8736495417149161822, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: targetPoints.Array.data[0]
@@ -4687,6 +4695,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7181,6 +7193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonEnemy11
       objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00000022421884
@@ -8222,6 +8238,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero Character Version 4 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3871988087316945932, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898609838909700312, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8064916503875896044, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
       propertyPath: healthBar
       value: 
@@ -8230,6 +8254,30 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 628892181}
+    - target: {fileID: 8906419426971605933, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.16610928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906419426971605933, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_Size.z
+      value: 1.1910195
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906419426971605933, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906419426971605933, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0021525628
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906419426971605933, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_Center.y
+      value: 0.00088139094
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906419426971605933, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: m_Center.z
+      value: 1.7440715
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8418,6 +8466,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8955,6 +9007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonEnemy14
       objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0000000651097
@@ -9084,6 +9140,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11317,6 +11377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonEnemy2
       objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00000033878067
@@ -11458,6 +11522,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12098,6 +12166,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13636,6 +13708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonEnemy13
       objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
+      objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00000011426537
@@ -14089,6 +14165,10 @@ PrefabInstance:
     - target: {fileID: 5030728000896476433, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Name
       value: SkeletonEnemy10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030728000896483333, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
+      propertyPath: m_TagString
+      value: SkeletonWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 5030728000896649135, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15427,6 +15507,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 153501708525345548, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 628892181}
+    - target: {fileID: 153501708525345548, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 153501708525345548, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 562073142760337818, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
       propertyPath: m_Name
       value: HUD version 3

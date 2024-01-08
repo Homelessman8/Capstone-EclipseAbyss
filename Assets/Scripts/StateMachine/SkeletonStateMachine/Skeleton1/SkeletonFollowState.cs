@@ -40,6 +40,7 @@ public class SkeletonFollowState : SkeletonStates
         }
         else
         {
+            manager.animator.SetBool("isWalking", true);
             manager.ChangeState(manager.idleState);
         }
     }

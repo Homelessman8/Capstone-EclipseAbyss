@@ -2950,6 +2950,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 'FLOOR 3: The Scorching Dunes'
       objectReference: {fileID: 0}
+    - target: {fileID: 7754374516811778400, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1556476573}
+    - target: {fileID: 7754374516811778400, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
