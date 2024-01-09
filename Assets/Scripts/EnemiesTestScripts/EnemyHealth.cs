@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void SwordDamage()
     {
-        currentHealth -= 2;
+        currentHealth -= 1;
 
         if (currentHealth <= 0)
         {
@@ -34,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void AxeDamage()
     {
-        currentHealth -= 5;
+        currentHealth -= 1;
 
         if (currentHealth <= 0)
         {
@@ -54,7 +54,6 @@ public class EnemyHealth : MonoBehaviour
 
     public void EnemyDied()
     {
-        currentHealth -=1;
 
         if (currentHealth <= 0)
         {

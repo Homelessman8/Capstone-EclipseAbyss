@@ -114,7 +114,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void MinotaurDamage()
     {
-        currentHealth -= 50;
+        currentHealth -= 10;
 
         healthBar.SetHealth(currentHealth);
         healthText.SetText($"{ currentHealth}");

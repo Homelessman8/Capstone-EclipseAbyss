@@ -7,16 +7,22 @@ public class MinotaurHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
 
-    public Animator minotaurAnimator;
+    //public Animator minotaurAnimator;
+
+    public MinotaurHealthUi minotaurHealthBar;
+
+    //public GameObject healthBar;
 
     void Start()
     {
         currentHealth = maxHealth;
+        minotaurHealthBar.SetMaxHealth(maxHealth);
     }
 
     public void SwordDamage()
     {
-        minotaurAnimator.SetBool("isHit", true);
+        minotaurHealthBar.SetHealth(currentHealth);
+        //minotaurAnimator.SetBool("isHit", true);
         currentHealth -= 2;
 
         if (currentHealth <= 0)
@@ -27,7 +33,8 @@ public class MinotaurHealth : MonoBehaviour
 
     public void DaggerDamage()
     {
-        minotaurAnimator.SetBool("isHit", true);
+        minotaurHealthBar.SetHealth(currentHealth);
+        //minotaurAnimator.SetBool("isHit", true);
         currentHealth -= 1;
 
         if (currentHealth <= 0)
@@ -38,8 +45,9 @@ public class MinotaurHealth : MonoBehaviour
 
     public void AxeDamage()
     {
-        minotaurAnimator.SetBool("isHit", true);
-        currentHealth -= 5;
+        minotaurHealthBar.SetHealth(currentHealth);
+        //minotaurAnimator.SetBool("isHit", true);
+        currentHealth -= 1;
 
         if (currentHealth <= 0)
         {
@@ -49,7 +57,8 @@ public class MinotaurHealth : MonoBehaviour
 
     public void GunDamage()
     {
-        minotaurAnimator.SetBool("isHit", true);
+        minotaurHealthBar.SetHealth(currentHealth);
+        //minotaurAnimator.SetBool("isHit", true);
         currentHealth -= 1;
 
         if (currentHealth <= 0)
@@ -60,11 +69,11 @@ public class MinotaurHealth : MonoBehaviour
 
     public void EnemyDied()
     {
-        currentHealth -= 1;
 
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            //Destroy(healthBar);
             Destroy(gameObject);
         }
     }
