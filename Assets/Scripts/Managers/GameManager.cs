@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject endgameUI;  // Reference to the endgame UI GameObject.
     public GameObject healthBar;
     public GameObject reticalDot;
+    public TextMeshProUGUI outOfDaggersText;
     public TextMeshProUGUI daggerText;
     public TextMeshProUGUI startLevelText;
     public TextMeshProUGUI levelGoalText;
@@ -153,6 +154,7 @@ public class GameManager : MonoBehaviour
         healthBar.SetActive(false);
         reticalDot.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        outOfDaggersText.gameObject.SetActive(false);
         startLevelText.gameObject.SetActive(false);
         levelGoalText.gameObject.SetActive(false);
         healthText.gameObject.SetActive(false);
@@ -209,6 +211,7 @@ public class GameManager : MonoBehaviour
         gameOverMenu.SetActive(true);
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        outOfDaggersText.gameObject.SetActive(false);
         healthText.gameObject.SetActive(false);
         reticalDot.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);

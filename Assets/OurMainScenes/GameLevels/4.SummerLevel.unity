@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.39568225, g: 0.14989173, b: 0.18825442, a: 1}
+  m_IndirectSpecularColor: {r: 0.3956822, g: 0.14989126, b: 0.18825409, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8024,6 +8024,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1013878815}
     m_Modifications:
+    - target: {fileID: 4830170362809405671, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1387753e76daa63488dcfb3c7a7cdbbc, type: 2}
+    - target: {fileID: 4830170362809405671, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+      propertyPath: m_fontStyle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830170362809405671, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6201467543115553175, guid: 1387753e76daa63488dcfb3c7a7cdbbc, type: 2}
+    - target: {fileID: 4830170362809405671, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830170362809405671, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830170362809405671, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+      propertyPath: m_fontColorGradientPreset
+      value: 
+      objectReference: {fileID: 11400000, guid: eb8c8ee553c74f54d948ec2a3addec10, type: 2}
     - target: {fileID: 5830719502370661809, guid: 40b0635339419524eb986decad66d1d8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
