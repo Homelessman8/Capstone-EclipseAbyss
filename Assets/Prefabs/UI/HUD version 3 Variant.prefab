@@ -4468,14 +4468,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DaggerThrowCounter
       objectReference: {fileID: 0}
-    - target: {fileID: 8251646117584818448, guid: 16523044f49d4614a8e5d6d297d82fac, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: ebaf42248accb414c8948bb628cbd1e9, type: 2}
-    - target: {fileID: 8251646117584818448, guid: 16523044f49d4614a8e5d6d297d82fac, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -3500271630300915908, guid: ebaf42248accb414c8948bb628cbd1e9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
