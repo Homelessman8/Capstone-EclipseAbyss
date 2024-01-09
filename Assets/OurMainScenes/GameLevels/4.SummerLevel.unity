@@ -5051,6 +5051,7 @@ MonoBehaviour:
   healthBar: {fileID: 95050778}
   daggerText: {fileID: 88690943}
   startLevelText: {fileID: 329063081}
+  levelGoalText: {fileID: 6259941781701716075}
   healthText: {fileID: 926524762}
   timerText: {fileID: 1144821071}
 --- !u!4 &1556476574
@@ -6018,6 +6019,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+--- !u!114 &6259941781701716075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4830170362809405671, guid: 40b0635339419524eb986decad66d1d8, type: 3}
+  m_PrefabInstance: {fileID: 6259941781701716074}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
