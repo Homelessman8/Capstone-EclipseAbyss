@@ -9,7 +9,7 @@ using Unity.AI.Navigation;
 public class MazeSpawner : MonoBehaviour
 {
     public GameObject player;
-    public NavMeshSurface surface;
+    //public NavMeshSurface surface;
 
 	private bool playerSpawned = false;
     public enum MazeGenerationAlgorithm
@@ -125,7 +125,7 @@ public class MazeSpawner : MonoBehaviour
                 //}
 
                 //Update Nav mesh
-                surface.BuildNavMesh();
+                //surface.BuildNavMesh();
 
                 // Spawn enemies randomly
                 //SpawnEnemies();
