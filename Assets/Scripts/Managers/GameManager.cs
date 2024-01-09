@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject healthBar;
     public TextMeshProUGUI daggerText;
     public TextMeshProUGUI startLevelText;
+    public TextMeshProUGUI levelGoalText;
     public TextMeshProUGUI healthText;
     //public TextMeshProUGUI bulletText;
     public TextMeshProUGUI timerText;
@@ -148,6 +149,7 @@ public class GameManager : MonoBehaviour
         healthBar.SetActive(false);
         daggerText.gameObject.SetActive(false);
         startLevelText.gameObject.SetActive(false);
+        levelGoalText.gameObject.SetActive(false);
         healthText.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
 
