@@ -36,7 +36,9 @@ public class SkeletonStateManager : MonoBehaviour
 
     void Update()
     {
+       
         transform.LookAt(playerTransform);
+        
         currentState.OnStateUpdate(this);
     }
 

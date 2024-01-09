@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject healthBar;
     public TextMeshProUGUI daggerText;
     public TextMeshProUGUI startLevelText;
+    public TextMeshProUGUI healthText;
     //public TextMeshProUGUI bulletText;
     public TextMeshProUGUI timerText;
     
@@ -126,6 +127,7 @@ public class GameManager : MonoBehaviour
         mainCharacterCamera.gameObject.SetActive(false);
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        healthText.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
         endgameUI.SetActive(true);   // Activate the endgame UI GameObject.
         healthBar.SetActive(false);
@@ -146,6 +148,7 @@ public class GameManager : MonoBehaviour
         healthBar.SetActive(false);
         daggerText.gameObject.SetActive(false);
         startLevelText.gameObject.SetActive(false);
+        healthText.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
 
     }
@@ -162,6 +165,7 @@ public class GameManager : MonoBehaviour
         gamePauseMenu.SetActive(false);
         healthBar.SetActive(true);
         daggerText.gameObject.SetActive(true);
+        healthText.gameObject.SetActive(true);
         //startLevelText.gameObject.SetActive(true);
         //bulletText.gameObject.SetActive(true);
     }
@@ -173,9 +177,10 @@ public class GameManager : MonoBehaviour
         player.gameObject.SetActive(true);
         gameOverCamera.gameObject.SetActive(false);
         mainCharacterCamera.gameObject.SetActive(true);
-        timerText.gameObject.SetActive(true);
         healthBar.SetActive(true);
+        timerText.gameObject.SetActive(true);
         daggerText.gameObject.SetActive(true);
+        healthText.gameObject.SetActive(true);
         //bulletText.gameObject.SetActive(true);
     }
 
@@ -194,6 +199,7 @@ public class GameManager : MonoBehaviour
         gameOverMenu.SetActive(true);
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
+        healthText.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
         healthBar.SetActive(false);
         gamePauseMenu = null;

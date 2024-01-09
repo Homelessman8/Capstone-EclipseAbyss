@@ -23,9 +23,9 @@ public class SkeletonFollowState : SkeletonStates
         {
             if (Vector3.Distance(manager.transform.position, manager.playerTransform.position) > 7f)
             {
-                manager.animator.SetBool("isWalking", false);
                 manager.ChangeState(manager.idleState);
-                
+                manager.animator.SetBool("isWalking", false);
+
                 //manager.animator.SetBool("isidle", true);
 
             }
