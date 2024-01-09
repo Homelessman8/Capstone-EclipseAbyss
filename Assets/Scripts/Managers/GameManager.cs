@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     private LevelManager currentLevel;
     private int currentLevelIndex;
 
+    Weapons weapons;
+
     public GameObject player;
     public GameObject gamePauseMenu;
     public GameObject gameOverMenu;
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject mainCharacterCamera;
     public GameObject endgameUI;  // Reference to the endgame UI GameObject.
     public GameObject healthBar;
+    public GameObject reticalDot;
     public TextMeshProUGUI daggerText;
     public TextMeshProUGUI startLevelText;
     public TextMeshProUGUI levelGoalText;
@@ -129,6 +132,7 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
         healthText.gameObject.SetActive(false);
+        reticalDot.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
         endgameUI.SetActive(true);   // Activate the endgame UI GameObject.
         healthBar.SetActive(false);
@@ -147,6 +151,7 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(false);
         gamePauseMenu.SetActive(true);
         healthBar.SetActive(false);
+        reticalDot.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
         startLevelText.gameObject.SetActive(false);
         levelGoalText.gameObject.SetActive(false);
@@ -155,8 +160,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+   
     public void UnPause()
     {
+        weapons = GetComponent<Weapons>();
+
         Debug.Log("Back to Game");
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
@@ -202,6 +210,7 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
         healthText.gameObject.SetActive(false);
+        reticalDot.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
         healthBar.SetActive(false);
         gamePauseMenu = null;
