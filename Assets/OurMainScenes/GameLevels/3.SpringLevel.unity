@@ -320,6 +320,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 7.43, y: 0, z: 0}
+--- !u!1 &246837232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146376271053757572, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+  m_PrefabInstance: {fileID: 462570449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &283743617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1705,6 +1710,7 @@ MonoBehaviour:
   mainCharacterCamera: {fileID: 1987671528}
   endgameUI: {fileID: 462570450}
   healthBar: {fileID: 716287210}
+  reticalDot: {fileID: 246837232}
   daggerText: {fileID: 2066751915}
   startLevelText: {fileID: 462570451}
   levelGoalText: {fileID: 1920753923}
@@ -2099,7 +2105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1987671528}
-  surface: {fileID: 1244396235}
   Algorithm: 1
   FullRandom: 1
   RandomSeed: 12345
@@ -2530,6 +2535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hero Character Version 4 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3704872876883836919, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
+      propertyPath: reticalDot
+      value: 
+      objectReference: {fileID: 246837232}
     - target: {fileID: 8064916503875896044, guid: 213a58f312e116c409982d8a2d103c6b, type: 3}
       propertyPath: healthBar
       value: 
