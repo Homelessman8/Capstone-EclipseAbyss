@@ -232,6 +232,8 @@ public class GameManager : MonoBehaviour
         gameEndMenu.SetActive(true);
     }
 
+
+
     public enum State
     {
         StartGame,
