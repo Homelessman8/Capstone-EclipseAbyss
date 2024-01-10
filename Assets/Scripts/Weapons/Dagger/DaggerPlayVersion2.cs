@@ -9,6 +9,9 @@ public class DaggerPlayVersion2 : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private Rigidbody rb;
+
     public TextMeshProUGUI outOfDaggerText;
 
     public Renderer render;
@@ -27,6 +30,8 @@ public class DaggerPlayVersion2 : MonoBehaviour
             if (currentClip > 0)
             {
                 animator.SetBool("isThrow", true);
+                //.addiing a force to the rigid body instead throught the animation
+                //rb.AddForce(FirstPersonLook.Instance.transform.forward * 20, ForceMode.Impulse);
                 currentClip--;
             }
 

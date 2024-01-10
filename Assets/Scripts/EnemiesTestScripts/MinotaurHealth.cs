@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MinotaurHealth : MonoBehaviour
 {
@@ -86,7 +87,16 @@ public class MinotaurHealth : MonoBehaviour
             animator.SetBool("isDead", true);
             //Destroy(healthBar);
             Invoke("DestroyMinotaur", 2.08f);
+
+            
         }
+    }
+
+    public void EndScene()
+    {
+
+        SceneManager.LoadScene("6. End Scene");
+        Debug.Log("winner winner chicken dinner");
     }
 
      void DestroyMinotaur()

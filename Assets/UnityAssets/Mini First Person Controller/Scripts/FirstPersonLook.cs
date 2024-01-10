@@ -2,6 +2,8 @@
 
 public class FirstPersonLook : MonoBehaviour
 {
+    public static FirstPersonLook Instance;
+
     [SerializeField]
     Transform character;
     public float sensitivity = 2;
@@ -19,6 +21,11 @@ public class FirstPersonLook : MonoBehaviour
 
     void Start()
     {
+        //This will activate the first person as the only fps
+        if (Instance == null)
+        {
+            Instance = this;
+        }
         // Lock the mouse cursor to the game screen.
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -36,4 +43,6 @@ public class FirstPersonLook : MonoBehaviour
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
     }
+
+
 }
