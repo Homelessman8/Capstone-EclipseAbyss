@@ -10,7 +10,8 @@ public class MinotaurHealth : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
-    public MinotaurHealthUi minotaurHealthBar;
+    [SerializeField]
+    private MinotaurHealthUi minotaurHealthBar;
 
     //public GameObject healthBar;
 
