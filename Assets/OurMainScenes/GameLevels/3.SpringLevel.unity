@@ -1499,7 +1499,7 @@ MonoBehaviour:
   healthBar: {fileID: 716287210}
   minotaurHealthBar: {fileID: 110978692}
   reticalDot: {fileID: 246837232}
-  outOfDaggersText: {fileID: 0}
+  outOfDaggersText: {fileID: 1077324940}
   daggerText: {fileID: 2066751915}
   startLevelText: {fileID: 462570451}
   levelGoalText: {fileID: 1920753923}
@@ -1535,6 +1535,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4953900011742234674, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
   m_PrefabInstance: {fileID: 462570449}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1077324940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5848914381170140867, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+  m_PrefabInstance: {fileID: 462570449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251662988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1745239616129675469, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}

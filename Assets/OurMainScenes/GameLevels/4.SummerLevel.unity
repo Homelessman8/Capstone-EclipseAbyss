@@ -6729,7 +6729,7 @@ MonoBehaviour:
   healthBar: {fileID: 95050778}
   minotaurHealthBar: {fileID: 29704927}
   reticalDot: {fileID: 1611223903}
-  outOfDaggersText: {fileID: 0}
+  outOfDaggersText: {fileID: 2116634689}
   daggerText: {fileID: 88690943}
   startLevelText: {fileID: 329063081}
   levelGoalText: {fileID: 6259941781701716075}
@@ -7934,6 +7934,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08103328, y: 0.9226043, z: 0.28315672}
   m_Center: {x: -0.18670982, y: -0.104103416, z: 0.015348773}
+--- !u!114 &2116634689 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5848914381170140867, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
+  m_PrefabInstance: {fileID: 1013878814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2140337082
 PrefabInstance:
   m_ObjectHideFlags: 0
