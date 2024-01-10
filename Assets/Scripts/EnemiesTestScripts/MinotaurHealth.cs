@@ -7,7 +7,8 @@ public class MinotaurHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
 
-    //public Animator minotaurAnimator;
+    [SerializeField]
+    private Animator animator;
 
     public MinotaurHealthUi minotaurHealthBar;
 
@@ -15,15 +16,16 @@ public class MinotaurHealth : MonoBehaviour
 
     void Start()
     {
+        //animator.SetBool("isDead", false);
         currentHealth = maxHealth;
         minotaurHealthBar.SetMaxHealth(maxHealth);
     }
 
     public void SwordDamage()
     {
-        minotaurHealthBar.SetHealth(currentHealth);
-        //minotaurAnimator.SetBool("isHit", true);
+        animator.SetBool("isHit", true);
         currentHealth -= 2;
+        minotaurHealthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -33,9 +35,11 @@ public class MinotaurHealth : MonoBehaviour
 
     public void DaggerDamage()
     {
-        minotaurHealthBar.SetHealth(currentHealth);
-        //minotaurAnimator.SetBool("isHit", true);
+       
+        animator.SetBool("isHit", true);
         currentHealth -= 1;
+
+        minotaurHealthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -45,9 +49,10 @@ public class MinotaurHealth : MonoBehaviour
 
     public void AxeDamage()
     {
-        minotaurHealthBar.SetHealth(currentHealth);
-        //minotaurAnimator.SetBool("isHit", true);
+        animator.SetBool("isHit", true);
         currentHealth -= 1;
+
+        minotaurHealthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -57,9 +62,10 @@ public class MinotaurHealth : MonoBehaviour
 
     public void GunDamage()
     {
-        minotaurHealthBar.SetHealth(currentHealth);
-        //minotaurAnimator.SetBool("isHit", true);
+        animator.SetBool("isHit", true);
         currentHealth -= 1;
+
+        minotaurHealthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -73,8 +79,17 @@ public class MinotaurHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            //animator.SetBool("isIdle", false);
+            //animator.SetBool("isWalking", false);
+            //animator.SetBool("isAttacking", false);
+            animator.SetBool("isDead", true);
             //Destroy(healthBar);
-            Destroy(gameObject);
+            Invoke("DestroyMinotaur", 2.08f);
         }
+    }
+
+     void DestroyMinotaur()
+    {
+        Destroy(gameObject);
     }
 }

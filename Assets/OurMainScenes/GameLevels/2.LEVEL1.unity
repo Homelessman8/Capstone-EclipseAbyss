@@ -3049,6 +3049,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 806148344}
     - target: {fileID: 3305576770134740996, guid: 16cdf6e274eee51469ec08371c17f122, type: 3}
+      propertyPath: minotaurHealthBar
+      value: 
+      objectReference: {fileID: 1032831686}
+    - target: {fileID: 3305576770134740996, guid: 16cdf6e274eee51469ec08371c17f122, type: 3}
       propertyPath: mainCharacterCamera
       value: 
       objectReference: {fileID: 372922265}
@@ -8516,6 +8520,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2225497170635104330, guid: cbb14154075c51844b3e2aed0f208635, type: 3}
   m_PrefabInstance: {fileID: 639999855}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1032831686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032831687}
+  m_Layer: 0
+  m_Name: FakeMinotaurHealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032831687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032831686}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1071745526
 GameObject:
   m_ObjectHideFlags: 0
@@ -15681,3 +15716,4 @@ SceneRoots:
   - {fileID: 1611310487}
   - {fileID: 473905250}
   - {fileID: 149279873}
+  - {fileID: 1032831687}

@@ -88,7 +88,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void BigSkeletonDamage()
     {
-        currentHealth -= 20;
+        currentHealth -= 10;
 
         healthBar.SetHealth(currentHealth);
         healthText.SetText($"{currentHealth}");
@@ -101,7 +101,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void ZombieDamage()
     {
-        currentHealth -= 10;
+        currentHealth -= 4;
 
         healthBar.SetHealth(currentHealth);
         healthText.SetText($"{currentHealth}");
@@ -114,7 +114,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void MinotaurDamage()
     {
-        currentHealth -= 10;
+        currentHealth -= 8;
 
         healthBar.SetHealth(currentHealth);
         healthText.SetText($"{ currentHealth}");

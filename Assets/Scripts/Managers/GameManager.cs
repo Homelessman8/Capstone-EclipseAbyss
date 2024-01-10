@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
     private LevelManager currentLevel;
     private int currentLevelIndex;
 
-    Weapons weapons;
-
     public GameObject player;
     public GameObject gamePauseMenu;
     public GameObject gameOverMenu;
@@ -26,6 +24,7 @@ public class GameManager : MonoBehaviour
     public GameObject mainCharacterCamera;
     public GameObject endgameUI;  // Reference to the endgame UI GameObject.
     public GameObject healthBar;
+    public GameObject minotaurHealthBar;
     public GameObject reticalDot;
     public TextMeshProUGUI outOfDaggersText;
     public TextMeshProUGUI daggerText;
@@ -133,6 +132,7 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
         healthText.gameObject.SetActive(false);
+        minotaurHealthBar.gameObject.SetActive(false);
         reticalDot.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
         endgameUI.SetActive(true);   // Activate the endgame UI GameObject.
@@ -152,6 +152,7 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(false);
         gamePauseMenu.SetActive(true);
         healthBar.SetActive(false);
+        minotaurHealthBar.SetActive(false);
         reticalDot.gameObject.SetActive(false);
         daggerText.gameObject.SetActive(false);
         outOfDaggersText.gameObject.SetActive(false);
@@ -165,8 +166,6 @@ public class GameManager : MonoBehaviour
    
     public void UnPause()
     {
-        weapons = GetComponent<Weapons>();
-
         Debug.Log("Back to Game");
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
@@ -176,6 +175,7 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(true);
         gamePauseMenu.SetActive(false);
         healthBar.SetActive(true);
+        minotaurHealthBar.SetActive(true);
         daggerText.gameObject.SetActive(true);
         healthText.gameObject.SetActive(true);
         //startLevelText.gameObject.SetActive(true);
@@ -216,6 +216,7 @@ public class GameManager : MonoBehaviour
         reticalDot.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
         healthBar.SetActive(false);
+        minotaurHealthBar.SetActive(false);
         gamePauseMenu = null;
     }
 

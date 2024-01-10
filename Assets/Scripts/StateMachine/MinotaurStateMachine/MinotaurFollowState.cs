@@ -22,7 +22,7 @@ public class MinotaurFollowState : MinotaurStates
         //ExitCondition to Idle State if distance to large
         if (minotaurManager.playerTransform != null)
         {
-            if (Vector3.Distance(minotaurManager.transform.position, minotaurManager.playerTransform.position) > 9f)
+            if (Vector3.Distance(minotaurManager.transform.position, minotaurManager.playerTransform.position) > 15f)
             {
                 minotaurManager.ChangeState(minotaurManager.minotaurIdleState);
                 minotaurManager.animator.SetBool("isWalking", false);

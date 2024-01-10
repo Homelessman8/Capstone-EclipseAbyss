@@ -365,6 +365,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 74.14376, y: 8.752132, z: 1}
   m_Center: {x: -25.341875, y: 3.8760662, z: -3.4281245e-10}
+--- !u!1 &29704927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29704928}
+  m_Layer: 0
+  m_Name: FakeMinotaurHealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &29704928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29704927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42701706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 510e8b094d51c0c448a1f47f52b71413, type: 3}
@@ -3068,11 +3099,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1528415045}
   m_SourcePrefab: {fileID: 100100000, guid: dc940b0e4c1a9f644a443556980ba27a, type: 3}
---- !u!1 &777546522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6234697536048784515, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
-  m_PrefabInstance: {fileID: 1013878814}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &789003025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4401,7 +4427,7 @@ PrefabInstance:
     - target: {fileID: 2863028284996888917, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 777546522}
+      objectReference: {fileID: 0}
     - target: {fileID: 2863028284996888917, guid: 48267426d4c8df84cbcfeefeaa06d23d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -6701,7 +6727,9 @@ MonoBehaviour:
   mainCharacterCamera: {fileID: 957983803}
   endgameUI: {fileID: 1377616570}
   healthBar: {fileID: 95050778}
+  minotaurHealthBar: {fileID: 29704927}
   reticalDot: {fileID: 1611223903}
+  outOfDaggersText: {fileID: 0}
   daggerText: {fileID: 88690943}
   startLevelText: {fileID: 329063081}
   levelGoalText: {fileID: 6259941781701716075}
@@ -8167,3 +8195,4 @@ SceneRoots:
   - {fileID: 182665291}
   - {fileID: 347359944}
   - {fileID: 312051204}
+  - {fileID: 29704928}
