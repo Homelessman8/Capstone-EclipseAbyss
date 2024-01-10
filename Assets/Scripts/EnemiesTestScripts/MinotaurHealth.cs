@@ -14,6 +14,8 @@ public class MinotaurHealth : MonoBehaviour
     [SerializeField]
     private MinotaurHealthUi minotaurHealthBar;
 
+    public GameObject bossDeathCutScene;
+
     //public GameObject healthBar;
 
     void Start()
@@ -81,23 +83,17 @@ public class MinotaurHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            //animator.SetBool("isIdle", false);
-            //animator.SetBool("isWalking", false);
-            //animator.SetBool("isAttacking", false);
-            animator.SetBool("isDead", true);
-            //Destroy(healthBar);
+            bossDeathCutScene.SetActive(true);
             Invoke("DestroyMinotaur", 2.08f);
-
-            
         }
     }
 
-    public void EndScene()
-    {
+   // public void EndScene()
+    //{
 
-        SceneManager.LoadScene("6. End Scene");
-        Debug.Log("winner winner chicken dinner");
-    }
+      //  SceneManager.LoadScene("6. End Scene");
+      //  Debug.Log("winner winner chicken dinner");
+   // }
 
      void DestroyMinotaur()
     {
