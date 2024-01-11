@@ -21,7 +21,7 @@ public class EnemyHealth : MonoBehaviour
     public void SwordDamage()
     {
         currentHealth -= 1;
-        EnemyHitAud.PlayOneShot(Clip2);
+        EnemyHitAud.PlayOneShot(Clip1);
         if (currentHealth <= 0)
         {
             EnemyDied();
@@ -41,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
     public void AxeDamage()
     {
         currentHealth -= 1;
-        EnemyHitAud.PlayOneShot(Clip2);
+        EnemyHitAud.PlayOneShot(Clip1);
         if (currentHealth <= 0)
         {
             EnemyDied();
@@ -60,7 +60,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void EnemyDied()
     {
-
+        EnemyHitAud.PlayOneShot(Clip2);
         if (currentHealth <= 0)
         {
             currentHealth = 0;
