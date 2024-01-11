@@ -16,11 +16,8 @@ public class MinotaurHealth : MonoBehaviour
 
     public GameObject bossDeathCutScene;
 
-    //public GameObject healthBar;
-
     void Start()
     {
-        //animator.SetBool("isDead", false);
         currentHealth = maxHealth;
         minotaurHealthBar.SetMaxHealth(maxHealth);
     }
@@ -28,6 +25,7 @@ public class MinotaurHealth : MonoBehaviour
     public void SwordDamage()
     {
         animator.SetBool("isHit", true);
+        Invoke("CancelAnimation", 0.2f);
         currentHealth -= 2;
         minotaurHealthBar.SetHealth(currentHealth);
 
@@ -41,6 +39,7 @@ public class MinotaurHealth : MonoBehaviour
     {
        
         animator.SetBool("isHit", true);
+        Invoke("CancelAnimation", 0.2f);
         currentHealth -= 1;
 
         minotaurHealthBar.SetHealth(currentHealth);
@@ -54,6 +53,7 @@ public class MinotaurHealth : MonoBehaviour
     public void AxeDamage()
     {
         animator.SetBool("isHit", true);
+        Invoke("CancelAnimation", 0.2f);
         currentHealth -= 1;
 
         minotaurHealthBar.SetHealth(currentHealth);
@@ -88,15 +88,13 @@ public class MinotaurHealth : MonoBehaviour
         }
     }
 
-   // public void EndScene()
-    //{
-
-      //  SceneManager.LoadScene("6. End Scene");
-      //  Debug.Log("winner winner chicken dinner");
-   // }
-
-     void DestroyMinotaur()
+    void DestroyMinotaur()
     {
         Destroy(gameObject);
+    }
+
+    void CancelAnimation()
+    {
+        animator.SetBool("isHit", false);
     }
 }
