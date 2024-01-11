@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void SwordDamage()
     {
-        currentHealth -= 1;
+        currentHealth -= 4;
         EnemyHitAud.PlayOneShot(Clip1);
         if (currentHealth <= 0)
         {
@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void DaggerDamage()
     {
-        currentHealth -= 1;
+        currentHealth -= 5;
         EnemyHitAud.PlayOneShot(Clip1);
         if (currentHealth <= 0)
         {
@@ -40,7 +40,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void AxeDamage()
     {
-        currentHealth -= 1;
+        currentHealth -= 6;
         EnemyHitAud.PlayOneShot(Clip1);
         if (currentHealth <= 0)
         {
@@ -50,7 +50,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void GunDamage()
     {
-        currentHealth -= 1;
+        currentHealth -= 0;
 
         if (currentHealth <= 0)
         {

@@ -716,8 +716,8 @@ MonoBehaviour:
   EnemyHitAud: {fileID: 3110707724623570755}
   Clip1: {fileID: 8300000, guid: 9007f44a2e879f24b99deaf2bf8a5439, type: 3}
   Clip2: {fileID: 8300000, guid: a4169a794920aef4bb9b31d48766057a, type: 3}
-  currentHealth: 10
-  maxHealth: 10
+  currentHealth: 6
+  maxHealth: 6
 --- !u!195 &8195593132746632208
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -75,7 +75,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void SkeletonDamage()
     {
-        currentHealth -= 5;
+        currentHealth -= 8;
 
         healthBar.SetHealth(currentHealth);
         healthText.SetText($"{currentHealth}");
