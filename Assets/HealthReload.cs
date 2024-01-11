@@ -13,7 +13,7 @@ public class HealthReload : MonoBehaviour
             
             Debug.Log("+10");
             playerHealth = other.GetComponent<PlayerHealth>();
-            playerHealth.Heal(10);
+            playerHealth.Heal(30);
             Destroy(gameObject);
             
                 
