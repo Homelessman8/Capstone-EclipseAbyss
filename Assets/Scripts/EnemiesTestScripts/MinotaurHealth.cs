@@ -26,7 +26,7 @@ public class MinotaurHealth : MonoBehaviour
     {
         animator.SetBool("isHit", true);
         Invoke("CancelAnimation", 0.2f);
-        currentHealth -= 4;
+        currentHealth -= 3;
         minotaurHealthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
@@ -40,7 +40,7 @@ public class MinotaurHealth : MonoBehaviour
        
         animator.SetBool("isHit", true);
         Invoke("CancelAnimation", 0.2f);
-        currentHealth -= 5;
+        currentHealth -= 2;
 
         minotaurHealthBar.SetHealth(currentHealth);
 

@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void DaggerDamage()
     {
-        currentHealth -= 5;
+        currentHealth -= 2;
         EnemyHitAud.PlayOneShot(Clip1);
         if (currentHealth <= 0)
         {
