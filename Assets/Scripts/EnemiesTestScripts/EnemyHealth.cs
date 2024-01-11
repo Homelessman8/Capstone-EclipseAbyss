@@ -66,6 +66,7 @@ public class EnemyHealth : MonoBehaviour
             currentHealth = 0;
             Destroy(gameObject);
             killCounterScript.AddKill();
+            EnemyHitAud.PlayOneShot(Clip2);
         }
     }
 }

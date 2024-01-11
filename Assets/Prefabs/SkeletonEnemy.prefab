@@ -714,8 +714,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyHitAud: {fileID: 3110707724623570755}
-  Clip1: {fileID: 8300000, guid: 015fbbd0653f4ec4d8c9a65483a8c578, type: 3}
-  Clip2: {fileID: 8300000, guid: 3935c4b69507c074999a9ea68e893cdf, type: 3}
+  Clip1: {fileID: 8300000, guid: 9007f44a2e879f24b99deaf2bf8a5439, type: 3}
+  Clip2: {fileID: 8300000, guid: a4169a794920aef4bb9b31d48766057a, type: 3}
   currentHealth: 10
   maxHealth: 10
 --- !u!195 &8195593132746632208
