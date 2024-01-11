@@ -708,7 +708,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5030728000896476433}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c40f493677f989144b5d635c49cf75cf, type: 3}
   m_Name: 
@@ -716,8 +716,8 @@ MonoBehaviour:
   EnemyHitAud: {fileID: 3110707724623570755}
   Clip1: {fileID: 8300000, guid: 015fbbd0653f4ec4d8c9a65483a8c578, type: 3}
   Clip2: {fileID: 8300000, guid: 3935c4b69507c074999a9ea68e893cdf, type: 3}
-  currentHealth: 3
-  maxHealth: 3
+  currentHealth: 10
+  maxHealth: 10
 --- !u!195 &8195593132746632208
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -800,7 +800,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.223
   m_Pitch: 1
   Loop: 0
   Mute: 0
