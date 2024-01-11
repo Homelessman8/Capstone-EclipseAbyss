@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject healthBar;
     public GameObject minotaurHealthBar;
     public GameObject reticalDot;
+    public GameObject killCount;
     public TextMeshProUGUI outOfDaggersText;
     public TextMeshProUGUI daggerText;
     public TextMeshProUGUI startLevelText;
@@ -138,6 +139,7 @@ public class GameManager : MonoBehaviour
         endgameUI.SetActive(true);   // Activate the endgame UI GameObject.
         healthBar.SetActive(false);
         gamePauseMenu = null;
+        killCount.gameObject.SetActive(false);
         //ChangeState(State.InitiateLevel, levelManagers[++currentLevelIndex]);
     }
 
@@ -159,6 +161,7 @@ public class GameManager : MonoBehaviour
         startLevelText.gameObject.SetActive(false);
         levelGoalText.gameObject.SetActive(false);
         healthText.gameObject.SetActive(false);
+        killCount.gameObject.SetActive(false);
         //bulletText.gameObject.SetActive(false);
 
     }
@@ -178,6 +181,7 @@ public class GameManager : MonoBehaviour
         minotaurHealthBar.SetActive(true);
         daggerText.gameObject.SetActive(true);
         healthText.gameObject.SetActive(true);
+        killCount.gameObject.SetActive(true);
         //startLevelText.gameObject.SetActive(true);
         //bulletText.gameObject.SetActive(true);
     }
@@ -217,6 +221,7 @@ public class GameManager : MonoBehaviour
         //bulletText.gameObject.SetActive(false);
         healthBar.SetActive(false);
         minotaurHealthBar.SetActive(false);
+        killCount.gameObject.SetActive(false);
         gamePauseMenu = null;
     }
 

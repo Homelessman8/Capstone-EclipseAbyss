@@ -10,12 +10,12 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
 
-    //KillCounter killCounterScript;
+    KillCounter killCounterScript;
 
     void Start()
     {
         currentHealth = maxHealth;
-        //killCounterScript = GameObject.Find("KCO").GetComponent<KillCounter>();
+        killCounterScript = GameObject.Find("KCO").GetComponent<KillCounter>();
     }
 
     public void SwordDamage()
@@ -65,7 +65,7 @@ public class EnemyHealth : MonoBehaviour
         {
             currentHealth = 0;
             Destroy(gameObject);
-            //killCounterScript.AddKill();
+            killCounterScript.AddKill();
         }
     }
 }
