@@ -7,7 +7,7 @@ public class Skeleton2FollowState : Skeleton2States
     public override void OnStateEnter(Skeleton2StateManager manager2)
     {
         manager2.transform.LookAt(manager2.playerTransform);
-        //manager2.animator.SetBool("isWalking", true);
+        manager2.animator.SetBool("isWalking", true);
         //Debug.Log("Skeleton is Following");
     }
 
@@ -21,10 +21,11 @@ public class Skeleton2FollowState : Skeleton2States
         //ExitCondition to Idle State if distance to large
         if (manager2.playerTransform != null)
         {
-            if (Vector3.Distance(manager2.transform.position, manager2.playerTransform.position) > 7f)
+            if (Vector3.Distance(manager2.transform.position, manager2.playerTransform.position) > 100f)
             {
-                //manager2.animator.SetBool("isWalking", false);
+                
                 manager2.ChangeState(manager2.idleState);
+                manager2.animator.SetBool("isWalking", false);
 
                 //manager.animator.SetBool("isidle", true);
 
@@ -40,6 +41,7 @@ public class Skeleton2FollowState : Skeleton2States
         }
         else
         {
+            manager2.animator.SetBool("isWalking", false);
             manager2.ChangeState(manager2.idleState);
         }
     }

@@ -8,7 +8,7 @@ public class Skeleton2IdleState : Skeleton2States
     public override void OnStateEnter(Skeleton2StateManager manager2)
     {
         manager2.agent.destination = manager2.targetPoints[currentTargetPoint].position;
-        manager2.animator.SetBool("isWalking", true);
+        manager2.animator.SetBool("isIdle", true);
         Debug.Log("Skeleton is Idling");
     }
 
