@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OurMainScenes/GameLevels/5.AutumnLevel.unity
     guid: 408042e14ab1b3241be81960bfb8eb03
-  - enabled: 1
+  - enabled: 0
     path: Assets/OurMainScenes/GameLevels/6. End Scene.unity
     guid: 43cd1a241dbd22843bdf956067511099
   m_configObjects: {}
