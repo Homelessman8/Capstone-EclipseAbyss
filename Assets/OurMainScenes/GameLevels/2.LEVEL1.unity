@@ -8691,18 +8691,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.572
       objectReference: {fileID: 0}
-    - target: {fileID: 3372084894660007818, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372084894660007818, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
-      propertyPath: maxHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372084894660007818, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
-      propertyPath: currentHealth
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5028959756679585284, guid: e3144dd45f5bc324ea16827bb3057893, type: 3}
       propertyPath: m_Mass
       value: 10
