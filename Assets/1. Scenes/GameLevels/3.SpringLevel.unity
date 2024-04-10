@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 187102676}
   - component: {fileID: 187102675}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: MenuCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,6 +568,37 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &387672100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 387672101}
+  m_Layer: 0
+  m_Name: (ThingsToRevise) -------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &387672101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387672100}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.7538, y: -8.207663, z: -1.4148254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &437477403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2561,14 +2592,15 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 962266889}
   - {fileID: 39662202}
-  - {fileID: 1987671527}
   - {fileID: 1307224666}
-  - {fileID: 462570449}
-  - {fileID: 2033202402}
+  - {fileID: 962266889}
   - {fileID: 187102677}
-  - {fileID: 383218081}
-  - {fileID: 110978693}
+  - {fileID: 462570449}
+  - {fileID: 1987671527}
+  - {fileID: 2033202402}
   - {fileID: 1729086681}
+  - {fileID: 383218081}
+  - {fileID: 387672101}
   - {fileID: 1868436415}
+  - {fileID: 110978693}
