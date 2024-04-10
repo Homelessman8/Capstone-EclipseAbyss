@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/OurMainScenes/GameLevels/1.MainMenu.unity
+    path: Assets/1. OurMainScenes/GameLevels/1.MainMenu.unity
     guid: ca05a82c8b84d264096f6ac75f916898
   - enabled: 1
-    path: Assets/OurMainScenes/GameLevels/2.LEVEL1.unity
+    path: Assets/1. OurMainScenes/GameLevels/2.LEVEL1.unity
     guid: e40d4f4fe63c3ab468230007ff438599
   - enabled: 1
-    path: Assets/OurMainScenes/GameLevels/3.SpringLevel.unity
+    path: Assets/1. OurMainScenes/GameLevels/3.SpringLevel.unity
     guid: 7e03644cb9a36384caa8170a2e22865a
   - enabled: 1
-    path: Assets/OurMainScenes/GameLevels/4.SummerLevel.unity
+    path: Assets/1. OurMainScenes/GameLevels/4.SummerLevel.unity
     guid: 00fc4714587d69141a7d0a4229e60863
   - enabled: 1
-    path: Assets/OurMainScenes/GameLevels/5.AutumnLevel.unity
+    path: Assets/1. OurMainScenes/GameLevels/5.AutumnLevel.unity
     guid: 408042e14ab1b3241be81960bfb8eb03
   - enabled: 0
-    path: Assets/OurMainScenes/GameLevels/6. End Scene.unity
+    path: Assets/1. OurMainScenes/GameLevels/6. End Scene.unity
     guid: 43cd1a241dbd22843bdf956067511099
   m_configObjects: {}
